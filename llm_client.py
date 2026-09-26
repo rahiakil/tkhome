@@ -166,6 +166,8 @@ class HeuristicEvaluator:
 
 
 # --- OpenAI LLM Predictor (SOTA LLM Pipeline) ---
+import threading
+
 class OpenAILLMEvaluator:
     """
     Evaluator that leverages OpenAI API with Structured Outputs to parse search results.
@@ -176,6 +178,7 @@ class OpenAILLMEvaluator:
         self.system_prompt = system_prompt
         self.client = None
         self.token_usage = {"input": 0, "output": 0}
+        self.usage_lock = threading.Lock()
         
         if self.api_key:
             self.client = OpenAI(api_key=self.api_key)
@@ -212,8 +215,9 @@ SEARCH RESULTS TO EVALUATE:
             # Track tokens
             usage = response.usage
             if usage:
-                self.token_usage["input"] += usage.prompt_tokens
-                self.token_usage["output"] += usage.completion_tokens
+                with self.usage_lock:
+                    self.token_usage["input"] += usage.prompt_tokens
+                    self.token_usage["output"] += usage.completion_tokens
 
             # Parse structured results
             parsed_data = response.choices[0].message.parsed

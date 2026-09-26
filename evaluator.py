@@ -9,8 +9,9 @@ class EvaluationHarness:
     Main evaluation harness for Vertex Smart Categorization search results.
     Loads data, runs predictions (LLM or Heuristic), calculates advanced metrics, and formats outputs.
     """
-    def __init__(self, data_path: str = DATA_PATH):
+    def __init__(self, data_path: str = DATA_PATH, output_path: str = OUTPUT_PATH):
         self.data_path = data_path
+        self.output_path = output_path
         self.raw_data = self.load_data()
 
     def load_data(self) -> Dict[str, Any]:
@@ -86,55 +87,70 @@ class EvaluationHarness:
             items = items[:limit]
             print(f"⚠️ Limiting evaluation to first {limit} products.")
 
-        for i, (prod_id, prod_info) in enumerate(items):
+        import concurrent.futures
+        
+        # We can run parallel requests if in openai mode
+        if mode == "openai":
+            max_workers = 10  # 10 parallel threads
+        else:
+            max_workers = 1   # heuristic runs locally, sequentially is fine
+            
+        def process_item(item_tuple):
+            prod_id, prod_info = item_tuple
             product_title = prod_info.get("product_title", "")
             product_description = prod_info.get("product_description", "")
             search_results = prod_info.get("search_results", {})
             ground_truth = prod_info.get("trusted_search_results", [])
-            
-            # Format keys as integer list for evaluation
             all_indices = [int(k) for k in search_results.keys()]
             
-            # Get predictions
             item_start = time.time()
             predicted_indices, metadata = evaluator.evaluate_product(product_title, product_description, search_results)
             item_latency = time.time() - item_start
             
-            # Calculate item metrics
-            m = self.calculate_metrics(ground_truth, predicted_indices, all_indices)
-            
-            # Aggregates for Micro metrics
-            total_tp += m["tp"]
-            total_fp += m["fp"]
-            total_fn += m["fn"]
-            total_tn += m["tn"]
-            
-            # Aggregates for Macro metrics
-            macro_precision_sum += m["precision"]
-            macro_recall_sum += m["recall"]
-            macro_f1_sum += m["f1"]
-            macro_f_beta_sum += m["f_beta_0.5"]
-            
-            # Save predictions
-            predictions_json[prod_id] = {
-                "product_title": product_title,
-                "product_description": product_description,
-                "search_results": search_results,
-                "trusted_search_results": ground_truth, # retain original ground truth for reference
-                "llm_trusted_search_results": predicted_indices, # output key as requested in case PDF
-                "metadata": metadata
-            }
+            return prod_id, product_title, product_description, search_results, ground_truth, all_indices, predicted_indices, metadata, item_latency
 
-            # Detailed metrics for this product
-            results[prod_id] = {
-                "metrics": m,
-                "latency": item_latency,
-                "predicted": predicted_indices,
-                "ground_truth": ground_truth
-            }
+        print(f"Executing with ThreadPoolExecutor (max_workers={max_workers})...")
+        with concurrent.futures.ThreadPoolExecutor(max_workers=max_workers) as executor:
+            futures = [executor.submit(process_item, item) for item in items]
+            
+            for i, future in enumerate(concurrent.futures.as_completed(futures)):
+                prod_id, product_title, product_description, search_results, ground_truth, all_indices, predicted_indices, metadata, item_latency = future.result()
+                
+                # Calculate item metrics
+                m = self.calculate_metrics(ground_truth, predicted_indices, all_indices)
+                
+                # Aggregates for Micro metrics
+                total_tp += m["tp"]
+                total_fp += m["fp"]
+                total_fn += m["fn"]
+                total_tn += m["tn"]
+                
+                # Aggregates for Macro metrics
+                macro_precision_sum += m["precision"]
+                macro_recall_sum += m["recall"]
+                macro_f1_sum += m["f1"]
+                macro_f_beta_sum += m["f_beta_0.5"]
+                
+                # Save predictions
+                predictions_json[prod_id] = {
+                    "product_title": product_title,
+                    "product_description": product_description,
+                    "search_results": search_results,
+                    "trusted_search_results": ground_truth, # retain original ground truth for reference
+                    "llm_trusted_search_results": predicted_indices, # output key as requested in case PDF
+                    "metadata": metadata
+                }
 
-            if (i + 1) % 5 == 0 or (i + 1) == len(items):
-                print(f"Processed {i + 1}/{len(items)} products...")
+                # Detailed metrics for this product
+                results[prod_id] = {
+                    "metrics": m,
+                    "latency": item_latency,
+                    "predicted": predicted_indices,
+                    "ground_truth": ground_truth
+                }
+
+                if (i + 1) % 5 == 0 or (i + 1) == len(items):
+                    print(f"Processed {i + 1}/{len(items)} products...")
 
         total_latency = time.time() - start_time
         num_products = len(items)
@@ -189,7 +205,7 @@ class EvaluationHarness:
         }
 
         # Write predictions file
-        with open(OUTPUT_PATH, "w") as f:
+        with open(self.output_path, "w") as f:
             json.dump(predictions_json, f, indent=2)
 
         return {"summary": summary, "product_details": results}

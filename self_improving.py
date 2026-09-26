@@ -9,10 +9,10 @@ class PromptOptimizer:
     Runs the pipeline on a training/validation subset, identifies failures,
     and uses an LLM to automatically refine the prompt. Reruns to verify improvement.
     """
-    def __init__(self, api_key: str = None, model: str = "gpt-4o-mini"):
+    def __init__(self, api_key: str = None, model: str = "gpt-4o-mini", data_path: str = DATA_PATH, output_path: str = OUTPUT_PATH):
         self.api_key = api_key or os.environ.get("OPENAI_API_KEY")
         self.model = model
-        self.harness = EvaluationHarness(DATA_PATH)
+        self.harness = EvaluationHarness(data_path=data_path, output_path=output_path)
         
         # We can import OpenAI here
         if self.api_key:
