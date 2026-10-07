@@ -52,13 +52,14 @@ while true; do
     echo -e "  ${CYAN}${BOLD}[2]${NC} Run SOTA OpenAI Production Model    ${YELLOW}(gpt-4o-mini, Concurrently Parallelized)${NC}"
     echo -e "  ${CYAN}${BOLD}[3]${NC} Run SOTA OpenAI on custom files     ${YELLOW}(Specify input/output JSON)${NC}"
     echo -e "  ${CYAN}${BOLD}[4]${NC} Run Automated Prompt Optimizer      ${YELLOW}(Auto-tuned prompt training loop)${NC}"
-    echo -e "  ${CYAN}${BOLD}[5]${NC} Regenerate Visual Browser Report    ${YELLOW}(Rebuilds training_runs_report.md)${NC}"
-    echo -e "  ${CYAN}${BOLD}[6]${NC} Display Project Slide Presentation   ${YELLOW}(Preview presentation outline)${NC}"
-    echo -e "  ${CYAN}${BOLD}[7]${NC} View Codebase Status & Git Log      ${YELLOW}(Quick git status & commit verification)${NC}"
-    echo -e "  ${CYAN}${BOLD}[8]${NC} Exit TUI"
+    echo -e "  ${CYAN}${BOLD}[5]${NC} View Prompt Differences & Changes    ${YELLOW}(Compare baseline vs optimized prompts)${NC}"
+    echo -e "  ${CYAN}${BOLD}[6]${NC} Regenerate Visual Browser Report    ${YELLOW}(Rebuilds training_runs_report.md)${NC}"
+    echo -e "  ${CYAN}${BOLD}[7]${NC} Display Project Slide Presentation   ${YELLOW}(Preview presentation outline)${NC}"
+    echo -e "  ${CYAN}${BOLD}[8]${NC} View Codebase Status & Git Log      ${YELLOW}(Quick git status & commit verification)${NC}"
+    echo -e "  ${CYAN}${BOLD}[9]${NC} Exit TUI"
     echo ""
     echo -e "${BLUE}${BOLD}================================================================================${NC}"
-    echo -en "${CYAN}${BOLD}Enter choice [1-8]: ${NC}"
+    echo -en "${CYAN}${BOLD}Enter choice [1-9]: ${NC}"
     read -r choice
 
     case $choice in
@@ -116,6 +117,12 @@ while true; do
             ;;
         5)
             show_header
+            echo -e "${GREEN}${BOLD}🚀 Comparing Baseline vs Optimized Prompts...${NC}\n"
+            python3 diff_prompts.py
+            press_any_key
+            ;;
+        6)
+            show_header
             echo -e "${GREEN}${BOLD}🚀 Generating Markdown Browser Dashboard Report...${NC}\n"
             python3 generate_report.py
             echo -e "\n${GREEN}${BOLD}✅ Successfully generated 'training_runs_report.md'!${NC}"
@@ -123,7 +130,7 @@ while true; do
             echo -e "${CYAN}https://github.com/rahiakil/tkhome/blob/main/training_runs_report.md${NC}"
             press_any_key
             ;;
-        6)
+        7)
             show_header
             echo -e "${GREEN}${BOLD}📋 Showing Quick Presentation Slide Overview...${NC}\n"
             if [ -f presentation_slides.md ]; then
@@ -135,7 +142,7 @@ while true; do
             fi
             press_any_key
             ;;
-        7)
+        8)
             show_header
             echo -e "${GREEN}${BOLD}📋 Current Codebase status & Remote Git branches:${NC}\n"
             git status
@@ -143,7 +150,7 @@ while true; do
             git log -n 3 --oneline
             press_any_key
             ;;
-        8)
+        9)
             echo -e "\n${GREEN}${BOLD}👋 Goodbye and good luck with the presentation!${NC}\n"
             exit 0
             ;;
