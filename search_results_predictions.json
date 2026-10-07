@@ -17,34 +17,34 @@
           "index": 1,
           "is_trusted": false,
           "confidence": 0.0,
-          "explanation": "This result discusses the benefits and ingredients of milk chocolate but does not represent a specific product; it is generic and not a branded item."
+          "explanation": "This result discusses the benefits and ingredients of milk chocolate but does not represent a specific product; it is generic information."
         },
         {
           "index": 2,
           "is_trusted": false,
           "confidence": 0.0,
-          "explanation": "This result provides general information about milk chocolate but does not refer to a specific product; it is a generic description."
+          "explanation": "This result provides general information about milk chocolate but does not refer to a specific product, making it untrustworthy."
         },
         {
           "index": 3,
           "is_trusted": false,
           "confidence": 0.0,
-          "explanation": "This result is about a milk chocolate layer cake, which is a different product format (cake) and not the queried liquid chocolate milk."
+          "explanation": "This result is about a milk chocolate layer cake, which is a different product format (cake) and not the queried item (milk, chocolate)."
         },
         {
           "index": 4,
           "is_trusted": false,
           "confidence": 0.0,
-          "explanation": "This result is about a milk chocolate cake, which is also a different product format (cake) and not the queried liquid chocolate milk."
+          "explanation": "This result is about a milk chocolate cake, which is also a different product format and not the queried item (milk, chocolate)."
         },
         {
           "index": 5,
           "is_trusted": false,
           "confidence": 0.0,
-          "explanation": "This result is about a chocolate cake recipe, which is unrelated to the queried product of liquid chocolate milk."
+          "explanation": "This result is about a chocolate cake recipe, which does not match the queried product of milk, chocolate."
         }
       ],
-      "reasoning": "All search results are either generic descriptions of milk chocolate or related to cake recipes, which do not match the specific product of liquid chocolate milk. There are no trusted results as none represent a specific branded product."
+      "reasoning": "All search results either provide general information about milk chocolate or refer to different product formats (cakes) that do not match the queried product of 'Milk, Chocolate'. None of the results represent a specific product, leading to a confidence score of 0.0 for all."
     }
   },
   "Dunkin Donuts Mocha 13.7zBtl ": {
@@ -77,34 +77,487 @@
           "index": 1,
           "is_trusted": true,
           "confidence": 0.9,
-          "explanation": "This result matches the brand 'Dunkin' and the product format of 'Iced Coffee' in a 13.7 oz bottle, which is consistent with the queried product."
+          "explanation": "This result matches the brand 'Dunkin' and the product format of 'Iced Coffee' in a 13.7 oz bottle, which aligns with the queried product."
         },
         {
           "index": 2,
           "is_trusted": true,
           "confidence": 0.9,
-          "explanation": "This result also matches the brand 'Dunkin' and the product format of 'Iced Coffee' in a 13.7 oz bottle, aligning with the queried product."
+          "explanation": "This result also matches the brand 'Dunkin', the flavor 'Mocha', and the format of a 13.7 oz bottle, making it a trusted match."
         },
         {
           "index": 3,
           "is_trusted": true,
-          "confidence": 0.9,
-          "explanation": "This result is for 'Dunkin Donuts Iced Coffee Beverage Mocha' in a 13.7 oz bottle, matching the brand and format of the queried product."
+          "confidence": 0.8,
+          "explanation": "This result includes 'Dunkin Donuts' and 'Mocha' in the title, and the format is a 13.7 oz bottle, which aligns with the query."
         },
         {
           "index": 4,
           "is_trusted": true,
-          "confidence": 0.9,
-          "explanation": "This result is for 'Dunkin' Mocha Iced Coffee & Milk Beverage' in a 13.7 fl oz bottle, which matches the brand and format of the queried product."
+          "confidence": 0.8,
+          "explanation": "This result matches the brand 'Dunkin' and the flavor 'Mocha', and the format is a 13.7 fl oz bottle, which is acceptable despite the slight difference in measurement."
         },
         {
           "index": 5,
           "is_trusted": true,
-          "confidence": 0.9,
-          "explanation": "This result is for 'Dunkin' Mocha Iced Coffee Bottle', matching the brand and format of the queried product."
+          "confidence": 0.7,
+          "explanation": "This result matches the brand 'Dunkin' and the flavor 'Mocha', but lacks the specific volume detail; however, it is still a trusted match for the product type."
         }
       ],
-      "reasoning": "All search results are for 'Dunkin' Mocha Iced Coffee' in a 13.7 oz bottle format, which matches the queried product. They all maintain the same brand identity and product type, ensuring consistency in flavor and format."
+      "reasoning": "All search results are for Dunkin's Mocha Iced Coffee in a 13.7 oz bottle format, which matches the queried product. Variations in wording (e.g., 'Iced Coffee' vs 'Coffee Beverage') do not affect the trustworthiness as they refer to the same product type. The slight differences in volume measurement (fl oz vs oz) are acceptable as they refer to the same product."
+    }
+  },
+  "capri sun paw patrol mango pineapple juice blend 10 ea ": {
+    "product_title": "capri sun paw patrol mango pineapple juice blend 10 ea",
+    "product_description": "",
+    "search_results": {
+      "1": "Title: Capri Sun 100% Juice, Mango Pineapple, Paw Patrol 10 ea\nLink: https://www.hghillfoodstores.com/shop/pantry/beverages/juice_lemonade/juice_boxes/capri_sun_100_juice_mango_pineapple_paw_patrol_10_ea/p/1564405684706172018\nSnippet: PEAR, APPLE, ORANGE, PINEAPPLE AND MANGO JUICES FROM CONCENTRATE (FILTERED WATER, PEAR, APPLE, ORANGE, PINEAPPLE AND MANGO JUICE CONCENTRATES), CITRIC ACID (FOR ...",
+      "2": "Title: Capri Sun 100% Juice, Mango Pineapple, Paw Patrol 10 ea\nLink: https://www.caseysfoods.com/shop/capri_sun_100_juice_mango_pineapple_paw_patrol_10_ea/p/1564405684706172018\nSnippet: PEAR, APPLE, ORANGE, PINEAPPLE AND MANGO JUICES FROM CONCENTRATE (FILTERED WATER, PEAR, APPLE, ORANGE, PINEAPPLE AND MANGO JUICE CONCENTRATES), CITRIC ACID ( ...",
+      "3": "Title: Capri Sun Mango Pineapple Flavored 100% Juice Blend ...\nLink: https://www.amazon.com/Capri-Sun-Patrol-Pineapple-Pouches/dp/B085FK1X3Q\nSnippet: Capri Sun Mango Pineapple Flavored 100% Juice Blend from Concentrate with Added Ingredients and Other Natural Flavor delivers refreshing hydration with all natural ingredients.",
+      "4": "Title: Capri Sun 100% Juice, Mango Pineapple, Paw Patrol 10 Ea\nLink: https://www.stoodtsfreshmarket.com/shop/capri_sun_100_juice_mango_pineapple_paw_patrol_10_ea/p/1564405684706172018\nSnippet: Capri Sun 100% Juice, Mango Pineapple, Paw Patrol 10 Ea \u00b7 Description \u00b7 Nutrition \u00b7 Ingredients.",
+      "5": "Title: Capri Sun 100% Juice, Mango Pineapple, Paw Patrol 10 Ea\nLink: https://freshseasonsmarket.com/shop/pantry/beverages/juice_lemonade/juice_boxes/capri_sun_100_juice_mango_pineapple_paw_patrol_10_ea/p/1564405684706172018\nSnippet: Capri Sun Paw Patrol Mango Pineapple 100% Juice ; 8% ; Total Carbs 22g ; 2%, iron 0.5mg ; iron 0.5mg ; 4%, potassium 220mg.",
+      "6": "Title: Capri Sun 100% Mango Pineapple Juice, 10 ct Box, 6 fl oz ...\nLink: https://www.walmart.com/ip/Capri-Sun-100-Juice-Paw-Patrol-Mango-Pineapple-Juice-Box-Pouches-10-ct-Box-6-fl-oz-Pouches/221899219\nSnippet: Capri Sun 100% Juice is made with no added sugar, only sugar that comes naturally from fruit juices. Each pouch contains 3/4 cup of fruit juice. Our all-natural ...",
+      "7": "Title: Capri Sun 100% Juice, Mango Pineapple, Paw Patrol 10 ea\nLink: https://www.woodssupermarket.com/departments/pantry/capri_sun_100_juice_mango_pineapple_10_ea/p/1564405684706172018\nSnippet: Made with all natural ingredients, we've packed our pouch with 100% fruit juice goodness. No artificial colors, flavors or preservatives. 100% juice. Totally ...",
+      "8": "Title: Capri Sun 100% Juice, Mango Pineapple, Paw Patrol 10 ea\nLink: https://www.fairplayfoods.com/shop/pantry/beverages/juice_lemonade/juice_boxes/capri_sun_100_juice_mango_pineapple_paw_patrol_10_ea/p/1564405684706172018\nSnippet: PEAR, APPLE, ORANGE, PINEAPPLE AND MANGO JUICES FROM CONCENTRATE (FILTERED WATER, PEAR, APPLE, ORANGE, PINEAPPLE AND MANGO JUICE CONCENTRATES), CITRIC ACID ...",
+      "9": "Title: Capri Sun 100% Juice Paw Patrol Mango Pineapple ...\nLink: https://www.acmemarkets.com/shop/product-details.970010361.html?srsltid=AfmBOoqlBtJbRaWyH0g-OstIpx6TVG6QLQMGgI3zAIv8yCDD9-wAjIuZ\nSnippet: Capri Sun 100% Juice Paw Patrol Mango Pineapple Juice Blend Pouches - 10-6 Fl. Oz. Shopping Options for Change ZIP. Delivery, available.",
+      "10": "Title: Capri Sun 100% Juice, Mango Pineapple, Paw Patrol, 10 - ...\nLink: https://mb2go.marketbasketfoods.com/online/iowamarketbasket/tags/backtoschool/all?pid=f33c7f33-3f23-4469-a2ff-ab8400b5b203\nSnippet: Pear, Apple, Orange, Pineapple and Mango Juices from Concentrate (Filtered Water: Pear, Apple, Orange, Pineapple and Mango Juice Concentrates), Citric Acid ..."
+    },
+    "trusted_search_results": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "llm_trusted_search_results": [
+      1,
+      2,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "metadata": {
+      "results": [
+        {
+          "index": 1,
+          "is_trusted": true,
+          "confidence": 1.0,
+          "explanation": "The title and description match exactly with the queried product, including brand, flavor, and format."
+        },
+        {
+          "index": 2,
+          "is_trusted": true,
+          "confidence": 1.0,
+          "explanation": "The title and description match exactly with the queried product, including brand, flavor, and format."
+        },
+        {
+          "index": 3,
+          "is_trusted": false,
+          "confidence": 0.0,
+          "explanation": "The title indicates 'Flavored' which suggests it is not the same as the '100% Juice' blend specified in the query."
+        },
+        {
+          "index": 4,
+          "is_trusted": true,
+          "confidence": 1.0,
+          "explanation": "The title and description match exactly with the queried product, including brand, flavor, and format."
+        },
+        {
+          "index": 5,
+          "is_trusted": true,
+          "confidence": 1.0,
+          "explanation": "The title and description match exactly with the queried product, including brand, flavor, and format."
+        },
+        {
+          "index": 6,
+          "is_trusted": true,
+          "confidence": 1.0,
+          "explanation": "The title and description match exactly with the queried product, including brand, flavor, and format."
+        },
+        {
+          "index": 7,
+          "is_trusted": true,
+          "confidence": 1.0,
+          "explanation": "The title and description match exactly with the queried product, including brand, flavor, and format."
+        },
+        {
+          "index": 8,
+          "is_trusted": true,
+          "confidence": 1.0,
+          "explanation": "The title and description match exactly with the queried product, including brand, flavor, and format."
+        },
+        {
+          "index": 9,
+          "is_trusted": true,
+          "confidence": 1.0,
+          "explanation": "The title and description match exactly with the queried product, including brand, flavor, and format."
+        },
+        {
+          "index": 10,
+          "is_trusted": true,
+          "confidence": 1.0,
+          "explanation": "The title and description match exactly with the queried product, including brand, flavor, and format."
+        }
+      ],
+      "reasoning": "All trusted results (1, 2, 4, 5, 6, 7, 8, 9, 10) match the queried product in brand, flavor, and format. Result 3 is rejected due to the inclusion of 'Flavored', which indicates a different product type than the specified '100% Juice' blend."
+    }
+  },
+  "Arnold Palmer Half & Half Iced Tea Lemonade 6 ea Iced Tea Lemonade, Half & Half": {
+    "product_title": "Arnold Palmer Half & Half Iced Tea Lemonade 6 ea",
+    "product_description": "Iced Tea Lemonade, Half & Half",
+    "search_results": {
+      "1": "Title: Arizona Arnold Palmer Lite Half and Half Iced Tea/ ... - H-E-B\nLink: https://www.heb.com/product-detail/arizona-arnold-palmer-lite-half-and-half-iced-tea-lemonade/1351617\nSnippet: Ingredients. Premium Brewed Blend of Black Teas Using Filtered Water, High Fructose Corn Syrup (Glucose-Fructose Syrup), Lemon Juice from Concentrate, Pear ...",
+      "2": "Title: EWG's Food Scores | Arizona Arnold Palmer Lite Half & ...\nLink: https://www.ewg.org/foodscores/products/613008728304-ArizonaArnoldPalmerLiteHalfHalfIcedTeaLemonadeLemonadeLemonade/\nSnippet: Ingredient List. From the Package. PREMIUM BREWED BLEND OF BLACK TEAS USING FILTERED WATER, HIGH FRUCTOSE CORN SYRUP (GLUCOSE-FRUCTOSE SYRUP), LEMON ...",
+      "3": "Title: Arizona Arnold Palmer Half & Half, Iced Tea Lemonade, Lite\nLink: https://shop.cashwise.com/store/cash-wise-foods/products/16315130-arizona-half-half-iced-tea-lemonade-lite-23-fl-oz\nSnippet: This version combines traditional black tea and lemonade to make a refreshing, great tasting beverage. Ingredients. Premium Brewed Blend Of Black Teas Using ...",
+      "4": "Title: Arizona LQ Half & Half Tea Lemonade, 23 Fl Oz\nLink: https://www.amazon.com/Arizona-LQ-Half-Tea-Lemonade/dp/B01IQRAVYI\nSnippet: PREMIUM BREWED BLEND OF BLACK TEAS USING FILTERED WATER, HIGH FRUCTOSE CORN SYRUP (GLUCOSE-FRUCTOSE SYRUP), LEMON JUICE FROM CONCENTRATE, PEAR JUICE FROM ...",
+      "5": "Title: AriZona Arnold Palmer Half & Half Iced Tea Lemonade Mix\nLink: https://martinsfoods.com/groceries/beverages/tea/iced-tea/iced-tea-mix/arizona-arnold-palmer-half-half-iced-tea-lemonade-mix-204-oz-can.html\nSnippet: Ingredients. Cane Sugar, Citric Acid, Premium Brewed Blend Of Teas, Natural Flavor, Lemon Juice Solids. Product Disclaimer.",
+      "6": "Title: Arnold Palmer Half & Half, Original, Iced Tea/Lemonade 6 ea\nLink: https://www.northgatepronto.com/shop/arnold_palmer_half_half_original_iced_tea_lemonade_6_ea/p/1564405684702459171\nSnippet: Pick up a 6 pack of 12 fl oz cans for golfing, grilling or just enjoying the day. Made with real brewed tea and real squeezed juice, this Arnold Palmer Spiked ...",
+      "7": "Title: Arnold Palmer Half & Half, Original, Iced Tea/Lemonade 6 ea\nLink: https://www.reasors.com/shop/beer_wine/beer/hard_ciders/arnold_palmer_half_half_original_iced_tea_lemonade_6_ea/p/1564405684702459171\nSnippet: Pick up a 6 pack of 12 fl oz cans for golfing, grilling or just enjoying the day. Made with real brewed tea and real squeezed juice, this Arnold Palmer Spiked ...",
+      "8": "Title: The Best Arnold Palmer (Half and Half Iced Tea + ...\nLink: https://www.seriouseats.com/best-arnold-palmer-iced-tea-lemonade-recipe\nSnippet: Halve and juice; pour juice into a sealable container and refrigerate. Cut rinds into 1-inch chunks. Toss with sugar in a large nonreactive mixing bowl ...",
+      "9": "Title: AriZona Arnold Palmer, Half & Half Iced Tea Lemonade ...\nLink: https://www.amazon.com/AriZona-Half-Lemonade-Arnold-Palmer/dp/B00J0AXDAK\nSnippet: Ingredients: 'INSTANT TEA, BROWN SUGAR, CITRIC ACID, NATURAL LEMON FLAVOR, LEMON JUICE SOLIDS, SUCRALOSE, ACESULFAME POTASSIUM'"
+    },
+    "trusted_search_results": [
+      6,
+      7,
+      9
+    ],
+    "llm_trusted_search_results": [
+      6,
+      7
+    ],
+    "metadata": {
+      "results": [
+        {
+          "index": 1,
+          "is_trusted": false,
+          "confidence": 0.0,
+          "explanation": "This result is for 'Lite' version of Arnold Palmer, which is a different product variant than the original queried product."
+        },
+        {
+          "index": 2,
+          "is_trusted": false,
+          "confidence": 0.0,
+          "explanation": "This result is also for the 'Lite' version of Arnold Palmer, which does not match the original product."
+        },
+        {
+          "index": 3,
+          "is_trusted": false,
+          "confidence": 0.0,
+          "explanation": "This result is for the 'Lite' version of Arnold Palmer, which is not the same as the original product being queried."
+        },
+        {
+          "index": 4,
+          "is_trusted": false,
+          "confidence": 0.0,
+          "explanation": "This result does not specify 'Lite', but it is still a different product format (not the original queried product)."
+        },
+        {
+          "index": 5,
+          "is_trusted": false,
+          "confidence": 0.0,
+          "explanation": "This result is for a mix version of Arnold Palmer, which is a different product format than the ready-to-drink version queried."
+        },
+        {
+          "index": 6,
+          "is_trusted": true,
+          "confidence": 1.0,
+          "explanation": "This result matches the exact product title and description for the original Arnold Palmer Half & Half Iced Tea Lemonade."
+        },
+        {
+          "index": 7,
+          "is_trusted": true,
+          "confidence": 1.0,
+          "explanation": "This result also matches the exact product title and description for the original Arnold Palmer Half & Half Iced Tea Lemonade."
+        },
+        {
+          "index": 8,
+          "is_trusted": false,
+          "confidence": 0.0,
+          "explanation": "This result is a recipe and does not represent a product for sale."
+        },
+        {
+          "index": 9,
+          "is_trusted": false,
+          "confidence": 0.0,
+          "explanation": "This result is for a different product format (instant tea) and does not match the original queried product."
+        }
+      ],
+      "reasoning": "The search results were evaluated based on brand, product format, and specific variants. The original product is the standard Arnold Palmer Half & Half Iced Tea Lemonade, while several results were for the 'Lite' version or different formats (like mixes or instant tea), which do not match the original product. Only results 6 and 7 matched the exact title and description of the queried product."
+    }
+  },
+  "Theraworx Protect For Daily Urinary Health Wipes 60 ea Wipes, Protect, For Daily Urinary Health": {
+    "product_title": "Theraworx Protect For Daily Urinary Health Wipes 60 ea",
+    "product_description": "Wipes, Protect, For Daily Urinary Health",
+    "search_results": {
+      "1": "Title: Theraworx Protect 60-Count Wipes for Daily Urinary Health ...\nLink: https://www.amazon.com/THERAWORX-PROTECT-Theraworx-Protect-60-Count/dp/B094JYKPJW\nSnippet: A: Theraworx for Urinary Hygiene is non-toxic, non-irritating, and safe for daily use and can be applied to multiple skin types anywhere on the body--especially on your private parts and sensitive areas.",
+      "2": "Title: Theraworx U-Pak Urinary Wipes & Foam\nLink: https://theraworx.com/product/protect-u-pak/\nSnippet: Theraworx\u00ae Protect U-Pak includes wipes and foam for daily urinary health. Enjoy gentle cleansing that refreshes and keeps you feeling fresh all day.",
+      "3": "Title: Theraworx\u00ae U-Pak Wipes: Feminine Wipes\nLink: https://theraworx.com/product/protect-u-pak-wipes/\nSnippet: Theraworx\u00ae Protect 60-ct Wipes help with daily cleansing for urinary health. Enjoy pH-balanced care that refreshes and leaves you feeling confident.",
+      "4": "Title: Daily Urinary Foams and Wipes\nLink: https://theraworx.com/products/daily-urinary-health-products/\nSnippet: Theraworx Protect Wipes are pH balanced, fragrance-free, and gently cleanse your skin. They reduce odor and leave you feeling fresh and comfortable.",
+      "5": "Title: Theraworx U-Pak For Daily Urinary Health, 1.0 set\nLink: https://www.walgreens.com/store/c/theraworx-u-pak-for-daily-urinary-health/ID=300396628-product\nSnippet: Theraworx Protect's U-Pak is clinically proven and offers a safe, effective way to cleanse and protect the urogenital area in those suffering from recurring urinary tract infections (UTIs).",
+      "6": "Title: Theraworx\u00ae U-Pak Wipes: Feminine Wipes\nLink: https://theraworx.com/product/protect-u-pak-wipes/\nSnippet: Our advanced, low-pH formula is free from alcohol, oils, and dyes, and supports daily urinary hygiene. Made with natural ingredients, they help moisturize and ...",
+      "7": "Title: Theraworx Protect 60-Count Wipes for Daily Urinary ...\nLink: https://www.amazon.com/THERAWORX-PROTECT-Theraworx-Protect-60-Count/dp/B094JYKPJW\nSnippet: Our advanced, low-pH formula is free from alcohol, oils, and dyes, and supports daily urinary hygiene. Made with natural ingredients, it helps moisturize and ...",
+      "8": "Title: Theraworx U-Pak Urinary Wipes & Foam\nLink: https://theraworx.com/product/protect-u-pak/\nSnippet: It's designed to help gently cleanse and care for your most sensitive areas. Our advanced, low-pH formula is free from alcohol, oils, and dyes, and supports ...",
+      "9": "Title: Theraworx U-Pak For Daily Urinary Health, 1.0 set\nLink: https://www.walgreens.com/store/c/theraworx-u-pak-for-daily-urinary-health/ID=300396628-product\nSnippet: Theraworx Protect's U-Pak is clinically proven and offers a safe, effective way to cleanse and protect the urogenital area in those suffering from recurring urinary tract infections (UTIs).",
+      "10": "Title: Theraworx Protect 60 Count Wipes for Daily Urinary ...\nLink: https://www.kroger.com/p/theraworx-protect-60-count-wipes-for-daily-urinary-health-and-hygiene-care/0319250419286\nSnippet: Leaves sensitive areas feeling soothed and refreshed. Use before and after sexual activity. Non-greasy, non-oily, unscented, natural ingredients. Absorbs ..."
+    },
+    "trusted_search_results": [
+      1,
+      3,
+      7,
+      10
+    ],
+    "llm_trusted_search_results": [
+      1,
+      7,
+      10
+    ],
+    "metadata": {
+      "results": [
+        {
+          "index": 1,
+          "is_trusted": true,
+          "confidence": 1.0,
+          "explanation": "The title and description match exactly with the queried product, confirming it is the same product."
+        },
+        {
+          "index": 2,
+          "is_trusted": false,
+          "confidence": 0.0,
+          "explanation": "This result includes a combo pack with foam, which is a different product format than the queried wipes only."
+        },
+        {
+          "index": 3,
+          "is_trusted": false,
+          "confidence": 0.0,
+          "explanation": "This result is for a U-Pak, which includes both wipes and foam, differing from the single product of wipes queried."
+        },
+        {
+          "index": 4,
+          "is_trusted": false,
+          "confidence": 0.0,
+          "explanation": "This result is generic and does not specify the product as wipes, making it ambiguous and not trusted."
+        },
+        {
+          "index": 5,
+          "is_trusted": false,
+          "confidence": 0.0,
+          "explanation": "This result is for a U-Pak that includes both wipes and foam, which is not the same as the queried wipes only."
+        },
+        {
+          "index": 6,
+          "is_trusted": false,
+          "confidence": 0.0,
+          "explanation": "This result is for a U-Pak, which includes both wipes and foam, differing from the single product of wipes queried."
+        },
+        {
+          "index": 7,
+          "is_trusted": true,
+          "confidence": 1.0,
+          "explanation": "The title and description match exactly with the queried product, confirming it is the same product."
+        },
+        {
+          "index": 8,
+          "is_trusted": false,
+          "confidence": 0.0,
+          "explanation": "This result is for a U-Pak that includes both wipes and foam, which is not the same as the queried wipes only."
+        },
+        {
+          "index": 9,
+          "is_trusted": false,
+          "confidence": 0.0,
+          "explanation": "This result is for a U-Pak that includes both wipes and foam, which is not the same as the queried wipes only."
+        },
+        {
+          "index": 10,
+          "is_trusted": true,
+          "confidence": 1.0,
+          "explanation": "The title and description match exactly with the queried product, confirming it is the same product."
+        }
+      ],
+      "reasoning": "The trusted results (1, 7, 10) all match the queried product title and description exactly, confirming they are the same product. The other results (2, 3, 5, 6, 8, 9) are not trusted due to being combo packs that include foam, which alters the product format. Result 4 is too generic and does not specify the product type clearly."
+    }
+  },
+  "Ghirardeli Squares White Chocolate Caramel 5 oz White Chocolate, Squares, Caramel": {
+    "product_title": "Ghirardeli Squares White Chocolate Caramel 5 oz",
+    "product_description": "White Chocolate, Squares, Caramel",
+    "search_results": {
+      "1": "Title: White Chocolate Caramel SQUARES Medium Bags (Case ...\nLink: https://www.ghirardelli.com/white-chocolate-caramel-squares-medium-bags-41124cs?srsltid=AfmBOoqt8NlKbr09m36crV6f8ohVv95Zu1sqY3Jn478q3F6sBUKZ7UAo\nSnippet: Ingredients & Allergens: Sugar, cocoa butter, corn syrup, whole milk powder, sweetened condensed milk (milk, sugar), nonfat dry milk, palm oil, butter (cream, ...",
+      "2": "Title: Ghirardelli, White Chocolate Squares with Caramel Filling, ...\nLink: https://www.cvs.com/shop/ghirardelli-white-chocolate-squares-with-caramel-filling-5-oz-bag-prodid-2640094\nSnippet: Ghirardelli Caramel White Chocolate Squares feature the Ghirardelli caramel you love, now surrounded by white chocolate for the ultimate treat.",
+      "3": "Title: White Chocolate Caramel SQUARES Case Pack (412 ct)\nLink: https://www.ghirardelli.com/white-chocolate-caramel-squares-case-pack-73089cs?srsltid=AfmBOopJmYneW9RPjfPLbsPapob1zNZT0Ql3X2NYcRU63NbFJDJtsZAe\nSnippet: Ingredients: Sugar, cocoa butter, corn syrup, whole milk powder, sweetened condensed milk (milk, sugar), nonfat dry milk, palm oil, butter (cream, salt), soy ...",
+      "4": "Title: Ghirardelli White Chocolate Caramel Chocolate Candy - 5 ...\nLink: https://www.amazon.com/Ghirardelli-White-Chocolate-Caramel-Candy/dp/B085WC21J2\nSnippet: Ghirardelli White Chocolate Caramel Chocolate Candy - 5 oz - Pack of 3. 50+ bought in past month.",
+      "5": "Title: Ghirardelli\u00ae White Chocolate Squares with Caramel ...\nLink: https://www.gerbes.com/p/ghirardelli-white-chocolate-squares-with-caramel-filling-holiday-candy-bag/0074759941115?srsltid=AfmBOopOw-N6o69rz_5etRUf1er7RckjhyWRtRkb49prpaqFxSucPDzD\nSnippet: Ingredients Sugar, Cocoa Butter, Corn Syrup, Whole Milk Powder, Sweetened Condensed Milk (Milk, Sugar), Nonfat Dry Milk, Palm Oil, Butter (Cream, Salt), ...",
+      "6": "Title: White Chocolate Sugar Cookie SQUARES Case Pack ...\nLink: https://www.ghirardelli.com/white-chocolate-sugar-cookie-squares-540-ct-10001784cs?srsltid=AfmBOoqEocFr0eN0Htf_5fTzZS_CfeP1gfW1g3Dy_BupvMeUDUXrZZWH\nSnippet: Ingredients: Cane sugar, cocoa butter, whole milk powder, sugar cookie pieces (cane sugar, rice flour ...",
+      "7": "Title: White Chocolate Sugar Cookie Squares 4.8 oz Bag\nLink: https://www.ghirardelli.com/ghirardelli-white-chocolate-sugar-cookie-squares-bag?srsltid=AfmBOoqJMDKMtiTDIWiz3206gLbFEAuPEKIGMWUBqgnQZDwl9t_ax7Fd\nSnippet: ... flour, buckwheat flour, palm oil, oat flour, natural flavor, sodium bicarbonate, salt, sunflower lecithin), nonfat dry milk, yellow corn flour, soy lecithin ...",
+      "8": "Title: Ghirardelli\u00ae White Chocolate Sugar Cookie Squares ...\nLink: https://www.gerbes.com/p/ghirardelli-white-chocolate-sugar-cookie-squares-holiday-candy-bag/0074759942010?srsltid=AfmBOoq3tnFXHQDJrDI4SuD4WD9Ilcy1paNWV08GwcgNb8VEALcxcPNN\nSnippet: Ingredients: Cane Sugar, Cocoa Butter, Whole Milk Powder, Sugar Cookie Pieces (Cane Sugar, Rice Flour, Buckwheat Flour, Palm Oil, Oat Flour, Natural Flavor)",
+      "9": "Title: GHIRARDELLI Milk Chocolate Caramel Waffle Cone ...\nLink: https://www.amazon.com/GHIRARDELLI-Chocolate-Caramel-Waffle-Squares/dp/B0CH44JZXJ\nSnippet: ... chocolate, sweetened condensed milk (milk, sugar), waffle cone bits (cane sugar, brown sugar, rice flour, palm oil, rice syrup, natural flavor, salt, sodium ...",
+      "10": "Title: Ghirardelli White Chocolate Sugar Cookie Candy Squares\nLink: https://www.target.com/p/ghirardelli-candy-white-chocolate-sugar-cookie-squares-tween-bag-4-8oz/-/A-90042925\nSnippet: Ingredients: cane sugar, cocoa butter, whole milk powder, sugar cookie pieces (cane sugar, rice flour, buckwheat flour, palm oil, oat flour ..."
+    },
+    "trusted_search_results": [
+      1,
+      2,
+      3,
+      5
+    ],
+    "llm_trusted_search_results": [
+      2,
+      5
+    ],
+    "metadata": {
+      "results": [
+        {
+          "index": 1,
+          "is_trusted": false,
+          "confidence": 0.0,
+          "explanation": "This result refers to 'Medium Bags' which indicates a different packaging format and does not match the specific product title of '5 oz'."
+        },
+        {
+          "index": 2,
+          "is_trusted": true,
+          "confidence": 1.0,
+          "explanation": "This result matches the exact product title and description, including the brand 'Ghirardelli', flavor 'White Chocolate', and format 'Squares' in a 5 oz bag."
+        },
+        {
+          "index": 3,
+          "is_trusted": false,
+          "confidence": 0.0,
+          "explanation": "This result is for a 'Case Pack', which indicates a different packaging format and quantity, not matching the single 5 oz product."
+        },
+        {
+          "index": 4,
+          "is_trusted": false,
+          "confidence": 0.0,
+          "explanation": "This result mentions 'Pack of 3', indicating a different quantity and packaging format, which does not match the queried product."
+        },
+        {
+          "index": 5,
+          "is_trusted": true,
+          "confidence": 1.0,
+          "explanation": "This result matches the exact product title and description, including the brand 'Ghirardelli', flavor 'White Chocolate', and format 'Squares' in a 5 oz bag."
+        },
+        {
+          "index": 6,
+          "is_trusted": false,
+          "confidence": 0.0,
+          "explanation": "This result is for 'White Chocolate Sugar Cookie Squares', which is a different flavor and does not match the queried product."
+        },
+        {
+          "index": 7,
+          "is_trusted": false,
+          "confidence": 0.0,
+          "explanation": "This result is for 'White Chocolate Sugar Cookie Squares', which is a different flavor and does not match the queried product."
+        },
+        {
+          "index": 8,
+          "is_trusted": false,
+          "confidence": 0.0,
+          "explanation": "This result is for 'White Chocolate Sugar Cookie Squares', which is a different flavor and does not match the queried product."
+        },
+        {
+          "index": 9,
+          "is_trusted": false,
+          "confidence": 0.0,
+          "explanation": "This result is for 'Milk Chocolate Caramel Waffle Cone', which is a different flavor and does not match the queried product."
+        },
+        {
+          "index": 10,
+          "is_trusted": false,
+          "confidence": 0.0,
+          "explanation": "This result is for 'White Chocolate Sugar Cookie Squares', which is a different flavor and does not match the queried product."
+        }
+      ],
+      "reasoning": "The trusted results (IDs 2 and 5) match the exact product title and description for 'Ghirardelli Squares White Chocolate Caramel 5 oz', while all other results either refer to different flavors, packaging formats, or quantities that do not align with the queried product."
+    }
+  },
+  "Lipton CB Unswet Blk Tea 14oz ": {
+    "product_title": "Lipton CB Unswet Blk Tea 14oz",
+    "product_description": "",
+    "search_results": {
+      "1": "Title: Amazon.com : Lipton Iced Tea Bags, Black ...\nLink: https://www.amazon.com/Lipton-Unsweetened-Rainforest-Alliance-Certified/dp/B00B0422CY\nSnippet: Ingredients: 0.75 oz Diced Mango; 1 Habanero, sliced thin; 0.5 oz Simple Syrup; 3 oz Lipton Black Iced Tea Unsweetened; 1 oz Rum. Unilever Food Solutions ...",
+      "2": "Title: Lipton Unsweetened Black Iced Tea Case\nLink: https://www.foodservicedirect.com/lipton-black-iced-tea-bags-unsweetened-1-gallon-pack-of-24-4-per-case-7285.html\nSnippet: Unsweetened black iced tea \u00b7 Made with orange pekoe and pekoe cut black tea \u00b7 Packaged in a zero-landfill facility \u00b7 Recyclable tea sachets and cartons \u00b7 0 calories ...",
+      "3": "Title: Cold Brew Iced Black Tea Family Size 22 Tea Bags\nLink: https://www.lipton.com/us/en/our-teas/cold-brew-family-size-tea-bags/\nSnippet: Easily brew crisp, refreshing Lipton black iced tea from these convenient family-size bags! Using real tea leaves specially blended for iced tea.",
+      "4": "Title: Lipton Black Tea Cold Brew Iced Tea Bags Family-Size ...\nLink: https://bashas.instacart.com/store/bashas/products/35402-lipton-cold-brew-family-size-tea-bags-22-ct\nSnippet: Your Tea Is Their Brighter Future. Ingredients. Orange Pekoe And Pekoe Cut Black Tea, Tea Extract. Directions. COLD BREW METHOD 1 ...",
+      "5": "Title: Lipton Texas Tea: Ingredients, Nutrition & Refreshment\nLink: https://www.liptonicedtea.com/en-us/our-iced-teas/black-iced-tea/iced-sweet-tea\nSnippet: Water, Sugar, Black Tea, Sodium Polyphosphates (to Protect Flavor), Phosphoric Acid, Natural Flavor, Potassium Sorbate (Preserves Freshness), Potassium Benzoate ...",
+      "6": "Title: Lipton Black Unsweetened Iced Tea Bags, Makes 3 ...\nLink: https://www.amazon.com/Lipton-Iced-Black-Unsweetened-gallon/dp/B01MTG7Q9A\nSnippet: Black unsweetened iced tea delivers crisp, delicious flavor and an enchanting aroma; Prepares 3 gallons of iced tea per tea bag; Gallon tea bags require ...",
+      "7": "Title: Lipton, Unsweetened Iced Tea Mix (Pack of 14)\nLink: https://business.walmart.com/ip/Lipton-Unsweetened-Iced-Tea-Mix-Pack-of-14/739149305\nSnippet: Enjoy instant Iced Tea in seconds with Refreshing & Delicious Lipton Unsweetened Black Iced Tea MixMade from real tea leavesTasty & Refreshing Lipton Black Iced Tea Unsweetened is the perfect addition to any mealSimply add Lipton Iced Tea Mix to water and add iceEach jar makes 30 qt of tasty and refreshing unsweetened iced tea (15 2QTs pitchers)Free of sugar or sweeteners Lipton ...",
+      "8": "Title: Our Teas | Herbal Tea Green Tea & Supplements\nLink: https://www.lipton.com/us/en/our-teas/\nSnippet: Here at Lipton, we create award-winning green tea, black tea, ice tea, herbal teas and supplements. Crafted for every need, discover our range of products ...",
+      "9": "Title: Lipton Unsweetened Black Iced Tea Case\nLink: https://www.foodservicedirect.com/lipton-black-iced-tea-bags-unsweetened-1-gallon-pack-of-24-4-per-case-7285.html\nSnippet: Angela Mia No Salt Added Diced Tomato In Tomato Juice, 102.5 Ounce -- 6. Angela Mia No Salt Added Diced Tomato In Tomato Juice, 102.5 Ounce -- 6 per case.",
+      "10": "Title: Lipton Pure Leaf Unsweetened Iced Black Tea, 18 pk.\nLink: https://www.bjs.com/product/lipton-pure-leaf-unsweetened-iced-black-tea-18-pk169-oz/3000000000001693751\nSnippet: Lipton Pure Leaf Unsweetened Iced Black Tea, 18 pk./16.9 oz. \u00b7 Brewed from real tea leaves picked at their freshest \u00b7 Black tea leaves are hand-selected and ..."
+    },
+    "trusted_search_results": [],
+    "llm_trusted_search_results": [],
+    "metadata": {
+      "results": [
+        {
+          "index": 1,
+          "is_trusted": false,
+          "confidence": 0.0,
+          "explanation": "This result is for Lipton Iced Tea Bags, which is a different format (tea bags) compared to the queried product (liquid ready-to-drink)."
+        },
+        {
+          "index": 2,
+          "is_trusted": false,
+          "confidence": 0.0,
+          "explanation": "This result refers to Lipton Unsweetened Black Iced Tea in a case format, which is also a different product format (tea bags) compared to the queried liquid product."
+        },
+        {
+          "index": 3,
+          "is_trusted": false,
+          "confidence": 0.0,
+          "explanation": "This result is for Cold Brew Iced Black Tea in tea bags, which does not match the queried liquid ready-to-drink format."
+        },
+        {
+          "index": 4,
+          "is_trusted": false,
+          "confidence": 0.0,
+          "explanation": "This result is for Lipton Black Tea Cold Brew Iced Tea Bags, which is a different product format (tea bags) compared to the queried liquid product."
+        },
+        {
+          "index": 5,
+          "is_trusted": false,
+          "confidence": 0.0,
+          "explanation": "This result is for Lipton Sweet Tea, which contains sugar and is not the same as the unsweetened version queried."
+        },
+        {
+          "index": 6,
+          "is_trusted": false,
+          "confidence": 0.0,
+          "explanation": "This result is for Lipton Black Unsweetened Iced Tea Bags, which is a different format (tea bags) compared to the queried liquid product."
+        },
+        {
+          "index": 7,
+          "is_trusted": false,
+          "confidence": 0.0,
+          "explanation": "This result is for Lipton Unsweetened Iced Tea Mix, which is a powdered mix and not the same as the liquid product queried."
+        },
+        {
+          "index": 8,
+          "is_trusted": false,
+          "confidence": 0.0,
+          "explanation": "This result is generic and does not specify a product that matches the queried unsweetened black tea."
+        },
+        {
+          "index": 9,
+          "is_trusted": false,
+          "confidence": 0.0,
+          "explanation": "This result is a duplicate of search result 2 and refers to tea bags, which do not match the queried liquid product."
+        },
+        {
+          "index": 10,
+          "is_trusted": false,
+          "confidence": 0.0,
+          "explanation": "This result is for Lipton Pure Leaf Unsweetened Iced Black Tea, which is a different product line and format (bottled) compared to the queried product."
+        }
+      ],
+      "reasoning": "All search results refer to tea bags or mixes, which are different formats from the queried liquid ready-to-drink Lipton CB Unsweet Blk Tea. Additionally, none of the results match the unsweetened specification or the exact product format."
     }
   },
   "Muscle Milk Banana Creme 14oz ": {
@@ -140,614 +593,64 @@
           "index": 1,
           "is_trusted": true,
           "confidence": 0.9,
-          "explanation": "This result matches the brand and flavor exactly, and the product format is consistent with the queried item."
+          "explanation": "This result matches the brand (Muscle Milk), flavor (Banana Creme), and format (14 oz bottle) exactly, making it a trusted match."
         },
         {
           "index": 2,
           "is_trusted": true,
           "confidence": 0.9,
-          "explanation": "This result matches the brand and flavor exactly, and the product format is consistent with the queried item."
+          "explanation": "This result matches the brand (Muscle Milk), flavor (Banana Creme), and format (14 fl oz) exactly, making it a trusted match."
         },
         {
           "index": 3,
           "is_trusted": false,
           "confidence": 0.5,
-          "explanation": "This result is for a 'Zero Sugar' variant, which is a different formula than the original queried product."
+          "explanation": "This result is for a 'Zero Sugar' variant, which is a different product from the original Muscle Milk Banana Creme, thus it is not trusted."
         },
         {
           "index": 4,
           "is_trusted": false,
-          "confidence": 0.5,
-          "explanation": "This result does not specify the product format clearly and lacks the brand identity needed for a trusted match."
+          "confidence": 0.4,
+          "explanation": "This result is too generic and lacks specific context or descriptors that match the queried product's intended meaning."
         },
         {
           "index": 5,
           "is_trusted": false,
-          "confidence": 0.0,
-          "explanation": "This result is for a protein powder, which is a different product format than the queried ready-to-drink shake."
+          "confidence": 0.3,
+          "explanation": "This result is for a protein powder, which is a different format than the queried ready-to-drink shake."
         },
         {
           "index": 6,
           "is_trusted": true,
           "confidence": 0.9,
-          "explanation": "This result matches the brand and flavor exactly, and the product format is consistent with the queried item."
+          "explanation": "This result matches the brand (Muscle Milk), flavor (Banana Cr\u00e8me), and format (14 fl oz bottle) exactly, making it a trusted match."
         },
         {
           "index": 7,
           "is_trusted": false,
-          "confidence": 0.5,
-          "explanation": "This result indicates a non-dairy version, which is a different product than the original queried item."
+          "confidence": 0.4,
+          "explanation": "This result is for a non-dairy variant, which is a different product from the original Muscle Milk Banana Creme."
         },
         {
           "index": 8,
           "is_trusted": true,
           "confidence": 0.9,
-          "explanation": "This result matches the brand and flavor exactly, and the product format is consistent with the queried item."
+          "explanation": "This result matches the brand (Muscle Milk), flavor (Banana Creme), and format (14 fl oz) exactly, making it a trusted match."
         },
         {
           "index": 9,
           "is_trusted": false,
           "confidence": 0.5,
-          "explanation": "This result is for a 'Zero Sugar' variant, which is a different formula than the original queried product."
+          "explanation": "This result is for a 'Zero Sugar' variant, which is a different product from the original Muscle Milk Banana Creme, thus it is not trusted."
         },
         {
           "index": 10,
           "is_trusted": false,
-          "confidence": 0.5,
-          "explanation": "This result indicates a non-dairy version, which is a different product than the original queried item."
+          "confidence": 0.4,
+          "explanation": "This result is for a non-dairy variant, which is a different product from the original Muscle Milk Banana Creme."
         }
       ],
-      "reasoning": "The trusted results must match the brand 'Muscle Milk', the flavor 'Banana Creme', and the product format of a ready-to-drink shake. Variants like 'Zero Sugar' or non-dairy versions do not match the original product, and protein powders are a different format altogether."
-    }
-  },
-  "Arnold Palmer Half & Half Iced Tea Lemonade 6 ea Iced Tea Lemonade, Half & Half": {
-    "product_title": "Arnold Palmer Half & Half Iced Tea Lemonade 6 ea",
-    "product_description": "Iced Tea Lemonade, Half & Half",
-    "search_results": {
-      "1": "Title: Arizona Arnold Palmer Lite Half and Half Iced Tea/ ... - H-E-B\nLink: https://www.heb.com/product-detail/arizona-arnold-palmer-lite-half-and-half-iced-tea-lemonade/1351617\nSnippet: Ingredients. Premium Brewed Blend of Black Teas Using Filtered Water, High Fructose Corn Syrup (Glucose-Fructose Syrup), Lemon Juice from Concentrate, Pear ...",
-      "2": "Title: EWG's Food Scores | Arizona Arnold Palmer Lite Half & ...\nLink: https://www.ewg.org/foodscores/products/613008728304-ArizonaArnoldPalmerLiteHalfHalfIcedTeaLemonadeLemonadeLemonade/\nSnippet: Ingredient List. From the Package. PREMIUM BREWED BLEND OF BLACK TEAS USING FILTERED WATER, HIGH FRUCTOSE CORN SYRUP (GLUCOSE-FRUCTOSE SYRUP), LEMON ...",
-      "3": "Title: Arizona Arnold Palmer Half & Half, Iced Tea Lemonade, Lite\nLink: https://shop.cashwise.com/store/cash-wise-foods/products/16315130-arizona-half-half-iced-tea-lemonade-lite-23-fl-oz\nSnippet: This version combines traditional black tea and lemonade to make a refreshing, great tasting beverage. Ingredients. Premium Brewed Blend Of Black Teas Using ...",
-      "4": "Title: Arizona LQ Half & Half Tea Lemonade, 23 Fl Oz\nLink: https://www.amazon.com/Arizona-LQ-Half-Tea-Lemonade/dp/B01IQRAVYI\nSnippet: PREMIUM BREWED BLEND OF BLACK TEAS USING FILTERED WATER, HIGH FRUCTOSE CORN SYRUP (GLUCOSE-FRUCTOSE SYRUP), LEMON JUICE FROM CONCENTRATE, PEAR JUICE FROM ...",
-      "5": "Title: AriZona Arnold Palmer Half & Half Iced Tea Lemonade Mix\nLink: https://martinsfoods.com/groceries/beverages/tea/iced-tea/iced-tea-mix/arizona-arnold-palmer-half-half-iced-tea-lemonade-mix-204-oz-can.html\nSnippet: Ingredients. Cane Sugar, Citric Acid, Premium Brewed Blend Of Teas, Natural Flavor, Lemon Juice Solids. Product Disclaimer.",
-      "6": "Title: Arnold Palmer Half & Half, Original, Iced Tea/Lemonade 6 ea\nLink: https://www.northgatepronto.com/shop/arnold_palmer_half_half_original_iced_tea_lemonade_6_ea/p/1564405684702459171\nSnippet: Pick up a 6 pack of 12 fl oz cans for golfing, grilling or just enjoying the day. Made with real brewed tea and real squeezed juice, this Arnold Palmer Spiked ...",
-      "7": "Title: Arnold Palmer Half & Half, Original, Iced Tea/Lemonade 6 ea\nLink: https://www.reasors.com/shop/beer_wine/beer/hard_ciders/arnold_palmer_half_half_original_iced_tea_lemonade_6_ea/p/1564405684702459171\nSnippet: Pick up a 6 pack of 12 fl oz cans for golfing, grilling or just enjoying the day. Made with real brewed tea and real squeezed juice, this Arnold Palmer Spiked ...",
-      "8": "Title: The Best Arnold Palmer (Half and Half Iced Tea + ...\nLink: https://www.seriouseats.com/best-arnold-palmer-iced-tea-lemonade-recipe\nSnippet: Halve and juice; pour juice into a sealable container and refrigerate. Cut rinds into 1-inch chunks. Toss with sugar in a large nonreactive mixing bowl ...",
-      "9": "Title: AriZona Arnold Palmer, Half & Half Iced Tea Lemonade ...\nLink: https://www.amazon.com/AriZona-Half-Lemonade-Arnold-Palmer/dp/B00J0AXDAK\nSnippet: Ingredients: 'INSTANT TEA, BROWN SUGAR, CITRIC ACID, NATURAL LEMON FLAVOR, LEMON JUICE SOLIDS, SUCRALOSE, ACESULFAME POTASSIUM'"
-    },
-    "trusted_search_results": [
-      6,
-      7,
-      9
-    ],
-    "llm_trusted_search_results": [
-      6,
-      7
-    ],
-    "metadata": {
-      "results": [
-        {
-          "index": 1,
-          "is_trusted": false,
-          "confidence": 0.0,
-          "explanation": "This result is for 'Lite' version of Arnold Palmer, which is not the same as the original product queried."
-        },
-        {
-          "index": 2,
-          "is_trusted": false,
-          "confidence": 0.0,
-          "explanation": "This result is also for the 'Lite' version of Arnold Palmer, which does not match the original product."
-        },
-        {
-          "index": 3,
-          "is_trusted": false,
-          "confidence": 0.0,
-          "explanation": "This result is for the 'Lite' version of Arnold Palmer, which is not the same as the original product queried."
-        },
-        {
-          "index": 4,
-          "is_trusted": false,
-          "confidence": 0.0,
-          "explanation": "This result does not specify 'Lite', but it is still a different product format and does not match the original product."
-        },
-        {
-          "index": 5,
-          "is_trusted": false,
-          "confidence": 0.0,
-          "explanation": "This result is for a powdered mix version of Arnold Palmer, which is not the same as the ready-to-drink product queried."
-        },
-        {
-          "index": 6,
-          "is_trusted": true,
-          "confidence": 1.0,
-          "explanation": "This result matches the exact product title and description for the original Arnold Palmer Half & Half Iced Tea Lemonade."
-        },
-        {
-          "index": 7,
-          "is_trusted": true,
-          "confidence": 1.0,
-          "explanation": "This result matches the exact product title and description for the original Arnold Palmer Half & Half Iced Tea Lemonade."
-        },
-        {
-          "index": 8,
-          "is_trusted": false,
-          "confidence": 0.0,
-          "explanation": "This result is a recipe and not a product for sale, thus it cannot be trusted."
-        },
-        {
-          "index": 9,
-          "is_trusted": false,
-          "confidence": 0.0,
-          "explanation": "This result is for a different product that includes instant tea and artificial sweeteners, which does not match the original product."
-        }
-      ],
-      "reasoning": "The search results were evaluated based on brand consistency, product format, and flavor variations. The 'Lite' versions were rejected due to differing sweetener formulations, while the powdered mix and recipe were also rejected for not being the same product format. The original Arnold Palmer Half & Half Iced Tea Lemonade was found in results 6 and 7, which matched the queried product exactly."
-    }
-  },
-  "Ghirardeli Squares White Chocolate Caramel 5 oz White Chocolate, Squares, Caramel": {
-    "product_title": "Ghirardeli Squares White Chocolate Caramel 5 oz",
-    "product_description": "White Chocolate, Squares, Caramel",
-    "search_results": {
-      "1": "Title: White Chocolate Caramel SQUARES Medium Bags (Case ...\nLink: https://www.ghirardelli.com/white-chocolate-caramel-squares-medium-bags-41124cs?srsltid=AfmBOoqt8NlKbr09m36crV6f8ohVv95Zu1sqY3Jn478q3F6sBUKZ7UAo\nSnippet: Ingredients & Allergens: Sugar, cocoa butter, corn syrup, whole milk powder, sweetened condensed milk (milk, sugar), nonfat dry milk, palm oil, butter (cream, ...",
-      "2": "Title: Ghirardelli, White Chocolate Squares with Caramel Filling, ...\nLink: https://www.cvs.com/shop/ghirardelli-white-chocolate-squares-with-caramel-filling-5-oz-bag-prodid-2640094\nSnippet: Ghirardelli Caramel White Chocolate Squares feature the Ghirardelli caramel you love, now surrounded by white chocolate for the ultimate treat.",
-      "3": "Title: White Chocolate Caramel SQUARES Case Pack (412 ct)\nLink: https://www.ghirardelli.com/white-chocolate-caramel-squares-case-pack-73089cs?srsltid=AfmBOopJmYneW9RPjfPLbsPapob1zNZT0Ql3X2NYcRU63NbFJDJtsZAe\nSnippet: Ingredients: Sugar, cocoa butter, corn syrup, whole milk powder, sweetened condensed milk (milk, sugar), nonfat dry milk, palm oil, butter (cream, salt), soy ...",
-      "4": "Title: Ghirardelli White Chocolate Caramel Chocolate Candy - 5 ...\nLink: https://www.amazon.com/Ghirardelli-White-Chocolate-Caramel-Candy/dp/B085WC21J2\nSnippet: Ghirardelli White Chocolate Caramel Chocolate Candy - 5 oz - Pack of 3. 50+ bought in past month.",
-      "5": "Title: Ghirardelli\u00ae White Chocolate Squares with Caramel ...\nLink: https://www.gerbes.com/p/ghirardelli-white-chocolate-squares-with-caramel-filling-holiday-candy-bag/0074759941115?srsltid=AfmBOopOw-N6o69rz_5etRUf1er7RckjhyWRtRkb49prpaqFxSucPDzD\nSnippet: Ingredients Sugar, Cocoa Butter, Corn Syrup, Whole Milk Powder, Sweetened Condensed Milk (Milk, Sugar), Nonfat Dry Milk, Palm Oil, Butter (Cream, Salt), ...",
-      "6": "Title: White Chocolate Sugar Cookie SQUARES Case Pack ...\nLink: https://www.ghirardelli.com/white-chocolate-sugar-cookie-squares-540-ct-10001784cs?srsltid=AfmBOoqEocFr0eN0Htf_5fTzZS_CfeP1gfW1g3Dy_BupvMeUDUXrZZWH\nSnippet: Ingredients: Cane sugar, cocoa butter, whole milk powder, sugar cookie pieces (cane sugar, rice flour ...",
-      "7": "Title: White Chocolate Sugar Cookie Squares 4.8 oz Bag\nLink: https://www.ghirardelli.com/ghirardelli-white-chocolate-sugar-cookie-squares-bag?srsltid=AfmBOoqJMDKMtiTDIWiz3206gLbFEAuPEKIGMWUBqgnQZDwl9t_ax7Fd\nSnippet: ... flour, buckwheat flour, palm oil, oat flour, natural flavor, sodium bicarbonate, salt, sunflower lecithin), nonfat dry milk, yellow corn flour, soy lecithin ...",
-      "8": "Title: Ghirardelli\u00ae White Chocolate Sugar Cookie Squares ...\nLink: https://www.gerbes.com/p/ghirardelli-white-chocolate-sugar-cookie-squares-holiday-candy-bag/0074759942010?srsltid=AfmBOoq3tnFXHQDJrDI4SuD4WD9Ilcy1paNWV08GwcgNb8VEALcxcPNN\nSnippet: Ingredients: Cane Sugar, Cocoa Butter, Whole Milk Powder, Sugar Cookie Pieces (Cane Sugar, Rice Flour, Buckwheat Flour, Palm Oil, Oat Flour, Natural Flavor)",
-      "9": "Title: GHIRARDELLI Milk Chocolate Caramel Waffle Cone ...\nLink: https://www.amazon.com/GHIRARDELLI-Chocolate-Caramel-Waffle-Squares/dp/B0CH44JZXJ\nSnippet: ... chocolate, sweetened condensed milk (milk, sugar), waffle cone bits (cane sugar, brown sugar, rice flour, palm oil, rice syrup, natural flavor, salt, sodium ...",
-      "10": "Title: Ghirardelli White Chocolate Sugar Cookie Candy Squares\nLink: https://www.target.com/p/ghirardelli-candy-white-chocolate-sugar-cookie-squares-tween-bag-4-8oz/-/A-90042925\nSnippet: Ingredients: cane sugar, cocoa butter, whole milk powder, sugar cookie pieces (cane sugar, rice flour, buckwheat flour, palm oil, oat flour ..."
-    },
-    "trusted_search_results": [
-      1,
-      2,
-      3,
-      5
-    ],
-    "llm_trusted_search_results": [
-      2,
-      4,
-      5
-    ],
-    "metadata": {
-      "results": [
-        {
-          "index": 1,
-          "is_trusted": false,
-          "confidence": 0.0,
-          "explanation": "This result refers to 'Medium Bags' which indicates a different packaging format and does not match the exact product title."
-        },
-        {
-          "index": 2,
-          "is_trusted": true,
-          "confidence": 1.0,
-          "explanation": "This result matches the exact product title and description, including the brand, format, and flavor."
-        },
-        {
-          "index": 3,
-          "is_trusted": false,
-          "confidence": 0.0,
-          "explanation": "This result is for a 'Case Pack' which indicates a different packaging format and does not match the exact product title."
-        },
-        {
-          "index": 4,
-          "is_trusted": true,
-          "confidence": 1.0,
-          "explanation": "This result matches the exact product title and description, including the brand, format, and flavor."
-        },
-        {
-          "index": 5,
-          "is_trusted": true,
-          "confidence": 1.0,
-          "explanation": "This result matches the exact product title and description, including the brand, format, and flavor."
-        },
-        {
-          "index": 6,
-          "is_trusted": false,
-          "confidence": 0.0,
-          "explanation": "This result is for 'White Chocolate Sugar Cookie SQUARES' which is a different flavor and does not match the queried product."
-        },
-        {
-          "index": 7,
-          "is_trusted": false,
-          "confidence": 0.0,
-          "explanation": "This result is for 'White Chocolate Sugar Cookie Squares' which is a different flavor and does not match the queried product."
-        },
-        {
-          "index": 8,
-          "is_trusted": false,
-          "confidence": 0.0,
-          "explanation": "This result is for 'White Chocolate Sugar Cookie Squares' which is a different flavor and does not match the queried product."
-        },
-        {
-          "index": 9,
-          "is_trusted": false,
-          "confidence": 0.0,
-          "explanation": "This result is for 'Milk Chocolate Caramel Waffle Cone' which is a different flavor and does not match the queried product."
-        },
-        {
-          "index": 10,
-          "is_trusted": false,
-          "confidence": 0.0,
-          "explanation": "This result is for 'White Chocolate Sugar Cookie Candy Squares' which is a different flavor and does not match the queried product."
-        }
-      ],
-      "reasoning": "The trusted results (IDs 2, 4, and 5) match the exact product title and description for Ghirardelli Squares White Chocolate Caramel 5 oz, while the others either refer to different flavors, formats, or packaging types."
-    }
-  },
-  "capri sun paw patrol mango pineapple juice blend 10 ea ": {
-    "product_title": "capri sun paw patrol mango pineapple juice blend 10 ea",
-    "product_description": "",
-    "search_results": {
-      "1": "Title: Capri Sun 100% Juice, Mango Pineapple, Paw Patrol 10 ea\nLink: https://www.hghillfoodstores.com/shop/pantry/beverages/juice_lemonade/juice_boxes/capri_sun_100_juice_mango_pineapple_paw_patrol_10_ea/p/1564405684706172018\nSnippet: PEAR, APPLE, ORANGE, PINEAPPLE AND MANGO JUICES FROM CONCENTRATE (FILTERED WATER, PEAR, APPLE, ORANGE, PINEAPPLE AND MANGO JUICE CONCENTRATES), CITRIC ACID (FOR ...",
-      "2": "Title: Capri Sun 100% Juice, Mango Pineapple, Paw Patrol 10 ea\nLink: https://www.caseysfoods.com/shop/capri_sun_100_juice_mango_pineapple_paw_patrol_10_ea/p/1564405684706172018\nSnippet: PEAR, APPLE, ORANGE, PINEAPPLE AND MANGO JUICES FROM CONCENTRATE (FILTERED WATER, PEAR, APPLE, ORANGE, PINEAPPLE AND MANGO JUICE CONCENTRATES), CITRIC ACID ( ...",
-      "3": "Title: Capri Sun Mango Pineapple Flavored 100% Juice Blend ...\nLink: https://www.amazon.com/Capri-Sun-Patrol-Pineapple-Pouches/dp/B085FK1X3Q\nSnippet: Capri Sun Mango Pineapple Flavored 100% Juice Blend from Concentrate with Added Ingredients and Other Natural Flavor delivers refreshing hydration with all natural ingredients.",
-      "4": "Title: Capri Sun 100% Juice, Mango Pineapple, Paw Patrol 10 Ea\nLink: https://www.stoodtsfreshmarket.com/shop/capri_sun_100_juice_mango_pineapple_paw_patrol_10_ea/p/1564405684706172018\nSnippet: Capri Sun 100% Juice, Mango Pineapple, Paw Patrol 10 Ea \u00b7 Description \u00b7 Nutrition \u00b7 Ingredients.",
-      "5": "Title: Capri Sun 100% Juice, Mango Pineapple, Paw Patrol 10 Ea\nLink: https://freshseasonsmarket.com/shop/pantry/beverages/juice_lemonade/juice_boxes/capri_sun_100_juice_mango_pineapple_paw_patrol_10_ea/p/1564405684706172018\nSnippet: Capri Sun Paw Patrol Mango Pineapple 100% Juice ; 8% ; Total Carbs 22g ; 2%, iron 0.5mg ; iron 0.5mg ; 4%, potassium 220mg.",
-      "6": "Title: Capri Sun 100% Mango Pineapple Juice, 10 ct Box, 6 fl oz ...\nLink: https://www.walmart.com/ip/Capri-Sun-100-Juice-Paw-Patrol-Mango-Pineapple-Juice-Box-Pouches-10-ct-Box-6-fl-oz-Pouches/221899219\nSnippet: Capri Sun 100% Juice is made with no added sugar, only sugar that comes naturally from fruit juices. Each pouch contains 3/4 cup of fruit juice. Our all-natural ...",
-      "7": "Title: Capri Sun 100% Juice, Mango Pineapple, Paw Patrol 10 ea\nLink: https://www.woodssupermarket.com/departments/pantry/capri_sun_100_juice_mango_pineapple_10_ea/p/1564405684706172018\nSnippet: Made with all natural ingredients, we've packed our pouch with 100% fruit juice goodness. No artificial colors, flavors or preservatives. 100% juice. Totally ...",
-      "8": "Title: Capri Sun 100% Juice, Mango Pineapple, Paw Patrol 10 ea\nLink: https://www.fairplayfoods.com/shop/pantry/beverages/juice_lemonade/juice_boxes/capri_sun_100_juice_mango_pineapple_paw_patrol_10_ea/p/1564405684706172018\nSnippet: PEAR, APPLE, ORANGE, PINEAPPLE AND MANGO JUICES FROM CONCENTRATE (FILTERED WATER, PEAR, APPLE, ORANGE, PINEAPPLE AND MANGO JUICE CONCENTRATES), CITRIC ACID ...",
-      "9": "Title: Capri Sun 100% Juice Paw Patrol Mango Pineapple ...\nLink: https://www.acmemarkets.com/shop/product-details.970010361.html?srsltid=AfmBOoqlBtJbRaWyH0g-OstIpx6TVG6QLQMGgI3zAIv8yCDD9-wAjIuZ\nSnippet: Capri Sun 100% Juice Paw Patrol Mango Pineapple Juice Blend Pouches - 10-6 Fl. Oz. Shopping Options for Change ZIP. Delivery, available.",
-      "10": "Title: Capri Sun 100% Juice, Mango Pineapple, Paw Patrol, 10 - ...\nLink: https://mb2go.marketbasketfoods.com/online/iowamarketbasket/tags/backtoschool/all?pid=f33c7f33-3f23-4469-a2ff-ab8400b5b203\nSnippet: Pear, Apple, Orange, Pineapple and Mango Juices from Concentrate (Filtered Water: Pear, Apple, Orange, Pineapple and Mango Juice Concentrates), Citric Acid ..."
-    },
-    "trusted_search_results": [
-      1,
-      2,
-      3,
-      4,
-      5,
-      6,
-      7,
-      8,
-      9,
-      10
-    ],
-    "llm_trusted_search_results": [
-      1,
-      2,
-      4,
-      5,
-      7,
-      8,
-      9,
-      10
-    ],
-    "metadata": {
-      "results": [
-        {
-          "index": 1,
-          "is_trusted": true,
-          "confidence": 1.0,
-          "explanation": "The title and description match exactly with the queried product, including the brand, flavor, and format."
-        },
-        {
-          "index": 2,
-          "is_trusted": true,
-          "confidence": 1.0,
-          "explanation": "This result has the same title and description as the queried product, confirming it is the exact match."
-        },
-        {
-          "index": 3,
-          "is_trusted": false,
-          "confidence": 0.0,
-          "explanation": "The title indicates 'Flavored 100% Juice Blend', which suggests it may contain additional flavors or ingredients not present in the queried product."
-        },
-        {
-          "index": 4,
-          "is_trusted": true,
-          "confidence": 1.0,
-          "explanation": "The title and description match exactly with the queried product, including the brand, flavor, and format."
-        },
-        {
-          "index": 5,
-          "is_trusted": true,
-          "confidence": 1.0,
-          "explanation": "The title and description match exactly with the queried product, confirming it is the exact match."
-        },
-        {
-          "index": 6,
-          "is_trusted": false,
-          "confidence": 0.0,
-          "explanation": "The title mentions '100% Mango Pineapple Juice', which does not match the exact product title that includes 'Paw Patrol' and suggests a different formulation."
-        },
-        {
-          "index": 7,
-          "is_trusted": true,
-          "confidence": 1.0,
-          "explanation": "The title and description match exactly with the queried product, including the brand, flavor, and format."
-        },
-        {
-          "index": 8,
-          "is_trusted": true,
-          "confidence": 1.0,
-          "explanation": "The title and description match exactly with the queried product, confirming it is the exact match."
-        },
-        {
-          "index": 9,
-          "is_trusted": true,
-          "confidence": 1.0,
-          "explanation": "The title and description match exactly with the queried product, including the brand, flavor, and format."
-        },
-        {
-          "index": 10,
-          "is_trusted": true,
-          "confidence": 1.0,
-          "explanation": "The title and description match exactly with the queried product, confirming it is the exact match."
-        }
-      ],
-      "reasoning": "All trusted results (1, 2, 4, 5, 7, 8, 9, 10) have the exact title and description as the queried product, confirming they are the same. Untrusted results (3, 6) either indicate a different formulation or flavor variation that does not match the original product."
-    }
-  },
-  "Theraworx Protect For Daily Urinary Health Wipes 60 ea Wipes, Protect, For Daily Urinary Health": {
-    "product_title": "Theraworx Protect For Daily Urinary Health Wipes 60 ea",
-    "product_description": "Wipes, Protect, For Daily Urinary Health",
-    "search_results": {
-      "1": "Title: Theraworx Protect 60-Count Wipes for Daily Urinary Health ...\nLink: https://www.amazon.com/THERAWORX-PROTECT-Theraworx-Protect-60-Count/dp/B094JYKPJW\nSnippet: A: Theraworx for Urinary Hygiene is non-toxic, non-irritating, and safe for daily use and can be applied to multiple skin types anywhere on the body--especially on your private parts and sensitive areas.",
-      "2": "Title: Theraworx U-Pak Urinary Wipes & Foam\nLink: https://theraworx.com/product/protect-u-pak/\nSnippet: Theraworx\u00ae Protect U-Pak includes wipes and foam for daily urinary health. Enjoy gentle cleansing that refreshes and keeps you feeling fresh all day.",
-      "3": "Title: Theraworx\u00ae U-Pak Wipes: Feminine Wipes\nLink: https://theraworx.com/product/protect-u-pak-wipes/\nSnippet: Theraworx\u00ae Protect 60-ct Wipes help with daily cleansing for urinary health. Enjoy pH-balanced care that refreshes and leaves you feeling confident.",
-      "4": "Title: Daily Urinary Foams and Wipes\nLink: https://theraworx.com/products/daily-urinary-health-products/\nSnippet: Theraworx Protect Wipes are pH balanced, fragrance-free, and gently cleanse your skin. They reduce odor and leave you feeling fresh and comfortable.",
-      "5": "Title: Theraworx U-Pak For Daily Urinary Health, 1.0 set\nLink: https://www.walgreens.com/store/c/theraworx-u-pak-for-daily-urinary-health/ID=300396628-product\nSnippet: Theraworx Protect's U-Pak is clinically proven and offers a safe, effective way to cleanse and protect the urogenital area in those suffering from recurring urinary tract infections (UTIs).",
-      "6": "Title: Theraworx\u00ae U-Pak Wipes: Feminine Wipes\nLink: https://theraworx.com/product/protect-u-pak-wipes/\nSnippet: Our advanced, low-pH formula is free from alcohol, oils, and dyes, and supports daily urinary hygiene. Made with natural ingredients, they help moisturize and ...",
-      "7": "Title: Theraworx Protect 60-Count Wipes for Daily Urinary ...\nLink: https://www.amazon.com/THERAWORX-PROTECT-Theraworx-Protect-60-Count/dp/B094JYKPJW\nSnippet: Our advanced, low-pH formula is free from alcohol, oils, and dyes, and supports daily urinary hygiene. Made with natural ingredients, it helps moisturize and ...",
-      "8": "Title: Theraworx U-Pak Urinary Wipes & Foam\nLink: https://theraworx.com/product/protect-u-pak/\nSnippet: It's designed to help gently cleanse and care for your most sensitive areas. Our advanced, low-pH formula is free from alcohol, oils, and dyes, and supports ...",
-      "9": "Title: Theraworx U-Pak For Daily Urinary Health, 1.0 set\nLink: https://www.walgreens.com/store/c/theraworx-u-pak-for-daily-urinary-health/ID=300396628-product\nSnippet: Theraworx Protect's U-Pak is clinically proven and offers a safe, effective way to cleanse and protect the urogenital area in those suffering from recurring urinary tract infections (UTIs).",
-      "10": "Title: Theraworx Protect 60 Count Wipes for Daily Urinary ...\nLink: https://www.kroger.com/p/theraworx-protect-60-count-wipes-for-daily-urinary-health-and-hygiene-care/0319250419286\nSnippet: Leaves sensitive areas feeling soothed and refreshed. Use before and after sexual activity. Non-greasy, non-oily, unscented, natural ingredients. Absorbs ..."
-    },
-    "trusted_search_results": [
-      1,
-      3,
-      7,
-      10
-    ],
-    "llm_trusted_search_results": [
-      1,
-      7,
-      10
-    ],
-    "metadata": {
-      "results": [
-        {
-          "index": 1,
-          "is_trusted": true,
-          "confidence": 1.0,
-          "explanation": "The title matches exactly with the queried product, and it is the same brand and format (wipes) as specified."
-        },
-        {
-          "index": 2,
-          "is_trusted": false,
-          "confidence": 0.0,
-          "explanation": "This result is for a combo pack that includes both wipes and foam, which does not match the single product query for wipes."
-        },
-        {
-          "index": 3,
-          "is_trusted": false,
-          "confidence": 0.0,
-          "explanation": "This result is also for a combo pack (U-Pak) and does not match the single product query for wipes."
-        },
-        {
-          "index": 4,
-          "is_trusted": false,
-          "confidence": 0.0,
-          "explanation": "This result does not specify the product as wipes only and appears to be a general description of multiple products, which does not match the specific query."
-        },
-        {
-          "index": 5,
-          "is_trusted": false,
-          "confidence": 0.0,
-          "explanation": "This result is for a U-Pak that includes both wipes and foam, which does not match the single product query for wipes."
-        },
-        {
-          "index": 6,
-          "is_trusted": false,
-          "confidence": 0.0,
-          "explanation": "This result is for a U-Pak that includes both wipes and foam, which does not match the single product query for wipes."
-        },
-        {
-          "index": 7,
-          "is_trusted": true,
-          "confidence": 1.0,
-          "explanation": "The title matches exactly with the queried product, and it is the same brand and format (wipes) as specified."
-        },
-        {
-          "index": 8,
-          "is_trusted": false,
-          "confidence": 0.0,
-          "explanation": "This result is for a combo pack that includes both wipes and foam, which does not match the single product query for wipes."
-        },
-        {
-          "index": 9,
-          "is_trusted": false,
-          "confidence": 0.0,
-          "explanation": "This result is for a U-Pak that includes both wipes and foam, which does not match the single product query for wipes."
-        },
-        {
-          "index": 10,
-          "is_trusted": true,
-          "confidence": 1.0,
-          "explanation": "The title matches exactly with the queried product, and it is the same brand and format (wipes) as specified."
-        }
-      ],
-      "reasoning": "The trusted results (1, 7, and 10) all match the exact title and format of the queried product, which is Theraworx Protect Wipes. The other results are either combo packs that include foam or do not specify the product as wipes only, leading to mismatches."
-    }
-  },
-  "LIFESAVERS MINTS WINTOGREEN SUP ": {
-    "product_title": "LIFESAVERS MINTS WINTOGREEN SUP",
-    "product_description": "",
-    "search_results": {
-      "1": "Title: LIFE SAVERS Wint-O-Green Mints Bag, 6.25 oz\nLink: https://www.life-savers.com/products/life-savers-wint-o-green-mints-bag-625-oz-life-savers-mints\nSnippet: INGREDIENTS: Sugar, Corn Syrup, Artificial Flavor, Stearic Acid. Please ...",
-      "2": "Title: Life Savers LIFE SAVERS Wint-O-Green Breath Mints ...\nLink: https://www.cub.com/product/life-savers-mints-wint-o-green-00019000085047?srsltid=AfmBOorpkSte1jWUMkey0duKg-oDl0Id74rQG_Uf2uxnkPrPbn7MtZS-\nSnippet: These hard-candy mints are ideal for freshening your breath after morning coffee or a long lunch break or as a sweet treat in the afternoon. After all, the icy, wintergreen taste of just one LIFE SAVERS Wint O Green Mints is all you need to freshen breath and refresh the day.",
-      "3": "Title: LIFE SAVERS Wint-O-Green Mints Single Roll, 0.84 oz\nLink: https://www.life-savers.com/products/life-savers-wint-o-green-mints-single-roll-084-oz-life-savers-mints\nSnippet: INGREDIENTS: Sugar, Corn Syrup, Artificial Flavor, Stearic Acid. Please ...",
-      "4": "Title: EWG's Food Scores | Life Savers Wint O Green Flavored ...\nLink: https://www.ewg.org/foodscores/products/022000283979-LifeSaversWintOGreenFlavoredMintsWintOGreen/\nSnippet: Ingredient List. From the Package. SUGAR, CORN SYRUP, ARTIFICIAL FLAVOR, STEARIC ACID. *Older Product.",
-      "5": "Title: Life Savers Mints, Wint O Green, Sharing Size\nLink: https://www.raleys.com/product/60630917/life-savers-mints-wint-o-green-sharing-size\nSnippet: Ingredients. Sugar, Corn Syrup, Artificial Flavor, Stearic Acid. Instructions.",
-      "6": "Title: Life Savers LIFE SAVERS Wint-O-Green Breath Mints ...\nLink: https://www.cub.com/product/life-savers-mints-wint-o-green-00019000085047?srsltid=AfmBOoo-9W4aqwmnsiw7rr3JwhEIB3SCeKtxs9XnCr741G6sBB-SVsP0\nSnippet: ... IngredientsBread CrumbsCake DecoratingDessert ToppingsDried FruitEvaporated & Condensed MilkFlour ... SoupRamenSoupSpices, Seasonings, & ExtractsButter ...",
-      "7": "Title: Life Savers LIFE SAVERS Wint-O-Green Breath Mints ...\nLink: https://www.smartandfinal.com/product/life-savers-life-savers-wintogreen-breath-mints-hard-candy-id-00019000085047\nSnippet: ... FlourIngredientsNuts, MorselsOthersPudding and Gelatin MixesSugarBeans, Rice, PastaBeansOthersPastaRiceSide DishSpecialty RiceCerealBars and PastriesCold ...",
-      "8": "Title: Life Savers Breath Mints Hard Candy, Wint-O-Green, ...\nLink: https://www.costco.com/life-savers-breath-mints-hard-candy%2C-wint-o-green%2C-53.95-oz-bag.product.100529255.html\nSnippet: Flour & Baking Supplies \u00b7 Honey \u00b7 Sauces, Condiments & Marinades \u00b7 Soup, Bouillon & Broth ... Calories: 15 kcal. Ingredients. Sugar, Corn Syrup, Artificial Flavor ...",
-      "9": "Title: Life Savers Candy Canes, Wint O Green, Pep O Mint 40 Ea\nLink: https://www.pigglywigglystores.com/shop/pantry/life_savers_candy_canes_wint_o_green_pep_o_mint_40_ea/p/2327904\nSnippet: Flour & Meals \u00b7 Frosting, Toppings & Decorations \u00b7 Jello & Pudding Mix ... Ingredients. Artificially flavored. What's inside - per serving (10 servings pack) ...",
-      "10": "Title: Life Savers Mints, Wint O Green 6.25 oz - Viking Village Foods\nLink: https://shop.vikingvillagefoods.com/shop/pantry/snacks_chips_dips/packaged_candy/mints/life_savers_mints_wint_o_green_6_25_oz/p/16966\nSnippet: Ingredients. Sugar, Corn Syrup, Artificial Flavor, Stearic Acid ... Frescados Tortillas, Flour, Burrito Style 10 ea Details \u00b7 Frescados Tortillas ..."
-    },
-    "trusted_search_results": [
-      1,
-      2,
-      3,
-      4,
-      5,
-      6,
-      7,
-      8,
-      10
-    ],
-    "llm_trusted_search_results": [
-      1,
-      5,
-      10
-    ],
-    "metadata": {
-      "results": [
-        {
-          "index": 1,
-          "is_trusted": true,
-          "confidence": 1.0,
-          "explanation": "This result matches the queried product exactly in brand, flavor, and format (Lifesavers Wint-O-Green Mints)."
-        },
-        {
-          "index": 2,
-          "is_trusted": false,
-          "confidence": 0.0,
-          "explanation": "This result refers to 'Breath Mints', which is a different product format than the queried 'Mints' and may have different ingredients."
-        },
-        {
-          "index": 3,
-          "is_trusted": false,
-          "confidence": 0.0,
-          "explanation": "This result is for a 'Single Roll' format, which is a different packaging than the queried product and may not be considered the same product."
-        },
-        {
-          "index": 4,
-          "is_trusted": false,
-          "confidence": 0.0,
-          "explanation": "This result does not provide a specific product format and is more of a general information source, not a direct match."
-        },
-        {
-          "index": 5,
-          "is_trusted": true,
-          "confidence": 1.0,
-          "explanation": "This result matches the queried product in brand, flavor, and format (Lifesavers Wint-O-Green Mints) and is a trusted source."
-        },
-        {
-          "index": 6,
-          "is_trusted": false,
-          "confidence": 0.0,
-          "explanation": "This result refers to 'Breath Mints', which is a different product format than the queried 'Mints'."
-        },
-        {
-          "index": 7,
-          "is_trusted": false,
-          "confidence": 0.0,
-          "explanation": "This result also refers to 'Breath Mints', which is a different product format than the queried 'Mints'."
-        },
-        {
-          "index": 8,
-          "is_trusted": false,
-          "confidence": 0.0,
-          "explanation": "This result refers to a larger bag of 'Breath Mints', which is a different product format than the queried 'Mints'."
-        },
-        {
-          "index": 9,
-          "is_trusted": false,
-          "confidence": 0.0,
-          "explanation": "This result is for 'Candy Canes', which is a different product format than the queried 'Mints'."
-        },
-        {
-          "index": 10,
-          "is_trusted": true,
-          "confidence": 1.0,
-          "explanation": "This result matches the queried product exactly in brand, flavor, and format (Lifesavers Wint-O-Green Mints)."
-        }
-      ],
-      "reasoning": "The trusted results (1, 5, and 10) all match the queried product in brand, flavor, and format. The other results either refer to different formats (like Breath Mints or Candy Canes) or are not specific enough to be considered a match."
-    }
-  },
-  "Lipton CB Unswet Blk Tea 14oz ": {
-    "product_title": "Lipton CB Unswet Blk Tea 14oz",
-    "product_description": "",
-    "search_results": {
-      "1": "Title: Amazon.com : Lipton Iced Tea Bags, Black ...\nLink: https://www.amazon.com/Lipton-Unsweetened-Rainforest-Alliance-Certified/dp/B00B0422CY\nSnippet: Ingredients: 0.75 oz Diced Mango; 1 Habanero, sliced thin; 0.5 oz Simple Syrup; 3 oz Lipton Black Iced Tea Unsweetened; 1 oz Rum. Unilever Food Solutions ...",
-      "2": "Title: Lipton Unsweetened Black Iced Tea Case\nLink: https://www.foodservicedirect.com/lipton-black-iced-tea-bags-unsweetened-1-gallon-pack-of-24-4-per-case-7285.html\nSnippet: Unsweetened black iced tea \u00b7 Made with orange pekoe and pekoe cut black tea \u00b7 Packaged in a zero-landfill facility \u00b7 Recyclable tea sachets and cartons \u00b7 0 calories ...",
-      "3": "Title: Cold Brew Iced Black Tea Family Size 22 Tea Bags\nLink: https://www.lipton.com/us/en/our-teas/cold-brew-family-size-tea-bags/\nSnippet: Easily brew crisp, refreshing Lipton black iced tea from these convenient family-size bags! Using real tea leaves specially blended for iced tea.",
-      "4": "Title: Lipton Black Tea Cold Brew Iced Tea Bags Family-Size ...\nLink: https://bashas.instacart.com/store/bashas/products/35402-lipton-cold-brew-family-size-tea-bags-22-ct\nSnippet: Your Tea Is Their Brighter Future. Ingredients. Orange Pekoe And Pekoe Cut Black Tea, Tea Extract. Directions. COLD BREW METHOD 1 ...",
-      "5": "Title: Lipton Texas Tea: Ingredients, Nutrition & Refreshment\nLink: https://www.liptonicedtea.com/en-us/our-iced-teas/black-iced-tea/iced-sweet-tea\nSnippet: Water, Sugar, Black Tea, Sodium Polyphosphates (to Protect Flavor), Phosphoric Acid, Natural Flavor, Potassium Sorbate (Preserves Freshness), Potassium Benzoate ...",
-      "6": "Title: Lipton Black Unsweetened Iced Tea Bags, Makes 3 ...\nLink: https://www.amazon.com/Lipton-Iced-Black-Unsweetened-gallon/dp/B01MTG7Q9A\nSnippet: Black unsweetened iced tea delivers crisp, delicious flavor and an enchanting aroma; Prepares 3 gallons of iced tea per tea bag; Gallon tea bags require ...",
-      "7": "Title: Lipton, Unsweetened Iced Tea Mix (Pack of 14)\nLink: https://business.walmart.com/ip/Lipton-Unsweetened-Iced-Tea-Mix-Pack-of-14/739149305\nSnippet: Enjoy instant Iced Tea in seconds with Refreshing & Delicious Lipton Unsweetened Black Iced Tea MixMade from real tea leavesTasty & Refreshing Lipton Black Iced Tea Unsweetened is the perfect addition to any mealSimply add Lipton Iced Tea Mix to water and add iceEach jar makes 30 qt of tasty and refreshing unsweetened iced tea (15 2QTs pitchers)Free of sugar or sweeteners Lipton ...",
-      "8": "Title: Our Teas | Herbal Tea Green Tea & Supplements\nLink: https://www.lipton.com/us/en/our-teas/\nSnippet: Here at Lipton, we create award-winning green tea, black tea, ice tea, herbal teas and supplements. Crafted for every need, discover our range of products ...",
-      "9": "Title: Lipton Unsweetened Black Iced Tea Case\nLink: https://www.foodservicedirect.com/lipton-black-iced-tea-bags-unsweetened-1-gallon-pack-of-24-4-per-case-7285.html\nSnippet: Angela Mia No Salt Added Diced Tomato In Tomato Juice, 102.5 Ounce -- 6. Angela Mia No Salt Added Diced Tomato In Tomato Juice, 102.5 Ounce -- 6 per case.",
-      "10": "Title: Lipton Pure Leaf Unsweetened Iced Black Tea, 18 pk.\nLink: https://www.bjs.com/product/lipton-pure-leaf-unsweetened-iced-black-tea-18-pk169-oz/3000000000001693751\nSnippet: Lipton Pure Leaf Unsweetened Iced Black Tea, 18 pk./16.9 oz. \u00b7 Brewed from real tea leaves picked at their freshest \u00b7 Black tea leaves are hand-selected and ..."
-    },
-    "trusted_search_results": [],
-    "llm_trusted_search_results": [],
-    "metadata": {
-      "results": [
-        {
-          "index": 1,
-          "is_trusted": false,
-          "confidence": 0.0,
-          "explanation": "This result is for Lipton Iced Tea Bags, which is a different product format (tea bags) compared to the queried liquid ready-to-drink format."
-        },
-        {
-          "index": 2,
-          "is_trusted": false,
-          "confidence": 0.0,
-          "explanation": "This result refers to Lipton Unsweetened Black Iced Tea in a case format, which is also a different product format (tea bags) compared to the queried liquid ready-to-drink format."
-        },
-        {
-          "index": 3,
-          "is_trusted": false,
-          "confidence": 0.0,
-          "explanation": "This result is for Cold Brew Iced Black Tea in tea bags, which is not the same as the queried liquid ready-to-drink product."
-        },
-        {
-          "index": 4,
-          "is_trusted": false,
-          "confidence": 0.0,
-          "explanation": "This result is for Lipton Black Tea Cold Brew Iced Tea Bags, which is a different product format (tea bags) compared to the queried liquid ready-to-drink format."
-        },
-        {
-          "index": 5,
-          "is_trusted": false,
-          "confidence": 0.0,
-          "explanation": "This result is for Lipton Sweet Tea, which contains sugar and is not the same as the queried unsweetened product."
-        },
-        {
-          "index": 6,
-          "is_trusted": false,
-          "confidence": 0.0,
-          "explanation": "This result is for Lipton Black Unsweetened Iced Tea Bags, which is a different product format (tea bags) compared to the queried liquid ready-to-drink format."
-        },
-        {
-          "index": 7,
-          "is_trusted": false,
-          "confidence": 0.0,
-          "explanation": "This result is for Lipton Unsweetened Iced Tea Mix, which is a powdered mix and not the same as the queried liquid ready-to-drink product."
-        },
-        {
-          "index": 8,
-          "is_trusted": false,
-          "confidence": 0.0,
-          "explanation": "This result is a general page about Lipton teas and does not specify the queried product."
-        },
-        {
-          "index": 9,
-          "is_trusted": false,
-          "confidence": 0.0,
-          "explanation": "This result is a duplicate of search result ID 2 and refers to Lipton Unsweetened Black Iced Tea in a case format, which is not the same as the queried liquid ready-to-drink format."
-        },
-        {
-          "index": 10,
-          "is_trusted": false,
-          "confidence": 0.0,
-          "explanation": "This result is for Lipton Pure Leaf Unsweetened Iced Black Tea, which is a different product line and format compared to the queried product."
-        }
-      ],
-      "reasoning": "All search results are for different formats (tea bags, mixes) or variations (sweetened vs unsweetened) that do not match the queried product, which is a liquid ready-to-drink unsweetened black tea."
+      "reasoning": "The trusted results must match the brand, flavor, and format of the queried product. Variants like 'Zero Sugar' or formats like 'Protein Powder' do not match the original product, leading to their rejection."
     }
   },
   "BRK STRAWBERRY DRINKING WATER   15/10 OZ ": {
@@ -782,64 +685,162 @@
           "index": 1,
           "is_trusted": false,
           "confidence": 0.0,
-          "explanation": "This result is for a 'Water Beverage, Strawberry' in a 15-pack, which is a combo pack and not the exact product queried, which is a single 'Drinking Water'."
+          "explanation": "This result is for a '15 Pack' of Brookshire's Water Beverage, which is a combo pack and does not match the queried product's title that specifies '15/10 oz'."
         },
         {
           "index": 2,
           "is_trusted": false,
           "confidence": 0.0,
-          "explanation": "This result is for 'Kroger\u00ae Strawberry Flavored Bottled Water', which is a different brand and format than the queried 'BRK STRAWBERRY DRINKING WATER'."
+          "explanation": "This result is for Kroger's brand, which does not match the queried brand 'BRK' (Brookshire's), thus it is not trusted."
         },
         {
           "index": 3,
           "is_trusted": true,
           "confidence": 1.0,
-          "explanation": "This result matches the brand 'Brookshire's' and the product 'Water Beverage, Strawberry' is consistent with the queried product, making it a trusted result."
+          "explanation": "This result matches the brand 'Brookshire's' and the product format 'Water Beverage, Strawberry' aligns perfectly with the queried product."
         },
         {
           "index": 4,
           "is_trusted": false,
           "confidence": 0.0,
-          "explanation": "This result is for 'Fruit Splash Juniors Water Beverage, Strawberry', which is a different brand and product than the queried 'BRK STRAWBERRY DRINKING WATER'."
+          "explanation": "This result is for 'Fruit Splash Juniors Water Beverage', which is a different brand and product, thus it is not trusted."
         },
         {
           "index": 5,
           "is_trusted": false,
           "confidence": 0.0,
-          "explanation": "This result is for a 'Strawberry Rhubarb' flavored beverage, which is not the same as the queried 'BRK STRAWBERRY DRINKING WATER'."
+          "explanation": "This result is for a 'Strawberry Rhubarb' flavored beverage, which does not match the queried flavor of 'Strawberry'."
         },
         {
           "index": 6,
           "is_trusted": false,
           "confidence": 0.0,
-          "explanation": "This result is a duplicate of result 1, which is for a 'Water Beverage, Strawberry' in a 15-pack, not the exact product queried."
+          "explanation": "This result is a repeat of ID 1, which is a combo pack and does not match the queried product's title."
         },
         {
           "index": 7,
           "is_trusted": true,
           "confidence": 1.0,
-          "explanation": "This result matches the brand 'Brookshire's' and the product 'Water Beverage, Strawberry', making it a trusted result."
+          "explanation": "This result matches the brand 'Brookshire's' and the product format 'Water Beverage, Strawberry', aligning perfectly with the queried product."
         },
         {
           "index": 8,
           "is_trusted": false,
           "confidence": 0.0,
-          "explanation": "This result is for 'Brookshire's Strawberry Water Beverage (10 oz x 15 ct)', which is a combo pack and not the exact product queried."
+          "explanation": "This result specifies '10 oz x 15 ct', which indicates a different size format than the queried '15/10 oz', thus it is not trusted."
         },
         {
           "index": 9,
           "is_trusted": false,
           "confidence": 0.0,
-          "explanation": "This result is for 'Fruit Splash Juniors Water Beverage, Strawberry', which is a different brand and product than the queried 'BRK STRAWBERRY DRINKING WATER'."
+          "explanation": "This result is for 'Fruit Splash Juniors Water Beverage', which is a different brand and product, thus it is not trusted."
         },
         {
           "index": 10,
           "is_trusted": false,
           "confidence": 0.0,
-          "explanation": "This result is for 'Best Choice Drinking Water', which is a different brand and not the same as the queried 'BRK STRAWBERRY DRINKING WATER'."
+          "explanation": "This result is for 'Best Choice Drinking Water', which is a different brand and does not match the queried brand 'BRK'."
         }
       ],
-      "reasoning": "The trusted results (3 and 7) are both from the same brand 'Brookshire's' and match the product type 'Water Beverage, Strawberry'. Other results either belong to different brands, are in combo packs, or are different flavors, which do not match the queried product."
+      "reasoning": "The trusted results (IDs 3 and 7) both match the brand 'Brookshire's' and the product type 'Water Beverage, Strawberry', which aligns with the queried product. Other results were rejected due to brand mismatches, different product formats, or flavor discrepancies."
+    }
+  },
+  "LIFESAVERS MINTS WINTOGREEN SUP ": {
+    "product_title": "LIFESAVERS MINTS WINTOGREEN SUP",
+    "product_description": "",
+    "search_results": {
+      "1": "Title: LIFE SAVERS Wint-O-Green Mints Bag, 6.25 oz\nLink: https://www.life-savers.com/products/life-savers-wint-o-green-mints-bag-625-oz-life-savers-mints\nSnippet: INGREDIENTS: Sugar, Corn Syrup, Artificial Flavor, Stearic Acid. Please ...",
+      "2": "Title: Life Savers LIFE SAVERS Wint-O-Green Breath Mints ...\nLink: https://www.cub.com/product/life-savers-mints-wint-o-green-00019000085047?srsltid=AfmBOorpkSte1jWUMkey0duKg-oDl0Id74rQG_Uf2uxnkPrPbn7MtZS-\nSnippet: These hard-candy mints are ideal for freshening your breath after morning coffee or a long lunch break or as a sweet treat in the afternoon. After all, the icy, wintergreen taste of just one LIFE SAVERS Wint O Green Mints is all you need to freshen breath and refresh the day.",
+      "3": "Title: LIFE SAVERS Wint-O-Green Mints Single Roll, 0.84 oz\nLink: https://www.life-savers.com/products/life-savers-wint-o-green-mints-single-roll-084-oz-life-savers-mints\nSnippet: INGREDIENTS: Sugar, Corn Syrup, Artificial Flavor, Stearic Acid. Please ...",
+      "4": "Title: EWG's Food Scores | Life Savers Wint O Green Flavored ...\nLink: https://www.ewg.org/foodscores/products/022000283979-LifeSaversWintOGreenFlavoredMintsWintOGreen/\nSnippet: Ingredient List. From the Package. SUGAR, CORN SYRUP, ARTIFICIAL FLAVOR, STEARIC ACID. *Older Product.",
+      "5": "Title: Life Savers Mints, Wint O Green, Sharing Size\nLink: https://www.raleys.com/product/60630917/life-savers-mints-wint-o-green-sharing-size\nSnippet: Ingredients. Sugar, Corn Syrup, Artificial Flavor, Stearic Acid. Instructions.",
+      "6": "Title: Life Savers LIFE SAVERS Wint-O-Green Breath Mints ...\nLink: https://www.cub.com/product/life-savers-mints-wint-o-green-00019000085047?srsltid=AfmBOoo-9W4aqwmnsiw7rr3JwhEIB3SCeKtxs9XnCr741G6sBB-SVsP0\nSnippet: ... IngredientsBread CrumbsCake DecoratingDessert ToppingsDried FruitEvaporated & Condensed MilkFlour ... SoupRamenSoupSpices, Seasonings, & ExtractsButter ...",
+      "7": "Title: Life Savers LIFE SAVERS Wint-O-Green Breath Mints ...\nLink: https://www.smartandfinal.com/product/life-savers-life-savers-wintogreen-breath-mints-hard-candy-id-00019000085047\nSnippet: ... FlourIngredientsNuts, MorselsOthersPudding and Gelatin MixesSugarBeans, Rice, PastaBeansOthersPastaRiceSide DishSpecialty RiceCerealBars and PastriesCold ...",
+      "8": "Title: Life Savers Breath Mints Hard Candy, Wint-O-Green, ...\nLink: https://www.costco.com/life-savers-breath-mints-hard-candy%2C-wint-o-green%2C-53.95-oz-bag.product.100529255.html\nSnippet: Flour & Baking Supplies \u00b7 Honey \u00b7 Sauces, Condiments & Marinades \u00b7 Soup, Bouillon & Broth ... Calories: 15 kcal. Ingredients. Sugar, Corn Syrup, Artificial Flavor ...",
+      "9": "Title: Life Savers Candy Canes, Wint O Green, Pep O Mint 40 Ea\nLink: https://www.pigglywigglystores.com/shop/pantry/life_savers_candy_canes_wint_o_green_pep_o_mint_40_ea/p/2327904\nSnippet: Flour & Meals \u00b7 Frosting, Toppings & Decorations \u00b7 Jello & Pudding Mix ... Ingredients. Artificially flavored. What's inside - per serving (10 servings pack) ...",
+      "10": "Title: Life Savers Mints, Wint O Green 6.25 oz - Viking Village Foods\nLink: https://shop.vikingvillagefoods.com/shop/pantry/snacks_chips_dips/packaged_candy/mints/life_savers_mints_wint_o_green_6_25_oz/p/16966\nSnippet: Ingredients. Sugar, Corn Syrup, Artificial Flavor, Stearic Acid ... Frescados Tortillas, Flour, Burrito Style 10 ea Details \u00b7 Frescados Tortillas ..."
+    },
+    "trusted_search_results": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      10
+    ],
+    "llm_trusted_search_results": [
+      1,
+      2,
+      5,
+      10
+    ],
+    "metadata": {
+      "results": [
+        {
+          "index": 1,
+          "is_trusted": true,
+          "confidence": 0.9,
+          "explanation": "This result matches the brand 'Lifesavers' and the flavor 'Wint-O-Green' in a similar format (mints) and size (6.25 oz), making it a trusted match."
+        },
+        {
+          "index": 2,
+          "is_trusted": true,
+          "confidence": 0.85,
+          "explanation": "This result is from the same brand 'Lifesavers' and matches the flavor 'Wint-O-Green', although it refers to 'Breath Mints', which is a common descriptor for mints, thus it is trusted."
+        },
+        {
+          "index": 3,
+          "is_trusted": false,
+          "confidence": 0.4,
+          "explanation": "This result is for a 'Single Roll' format, which is a different packaging than the queried product, thus it is not trusted."
+        },
+        {
+          "index": 4,
+          "is_trusted": false,
+          "confidence": 0.3,
+          "explanation": "This result does not provide a specific product title that matches the queried product and is more of a general information source, making it untrustworthy."
+        },
+        {
+          "index": 5,
+          "is_trusted": true,
+          "confidence": 0.8,
+          "explanation": "This result matches the brand 'Lifesavers' and the flavor 'Wint-O-Green', and while it mentions 'Sharing Size', it is still a valid format for mints."
+        },
+        {
+          "index": 6,
+          "is_trusted": false,
+          "confidence": 0.2,
+          "explanation": "This result is a duplicate of a previous entry and does not provide any new information or context, thus it is not trusted."
+        },
+        {
+          "index": 7,
+          "is_trusted": false,
+          "confidence": 0.2,
+          "explanation": "This result is a duplicate of a previous entry and does not provide any new information or context, thus it is not trusted."
+        },
+        {
+          "index": 8,
+          "is_trusted": false,
+          "confidence": 0.1,
+          "explanation": "This result refers to a larger bag of 'Breath Mints', which is a different product format than the queried item, making it untrustworthy."
+        },
+        {
+          "index": 9,
+          "is_trusted": false,
+          "confidence": 0.1,
+          "explanation": "This result is for 'Candy Canes', which is a different product format than mints, thus it is not trusted."
+        },
+        {
+          "index": 10,
+          "is_trusted": true,
+          "confidence": 0.9,
+          "explanation": "This result matches the brand 'Lifesavers' and the flavor 'Wint-O-Green' in a similar format (mints) and size (6.25 oz), making it a trusted match."
+        }
+      ],
+      "reasoning": "The evaluations focused on matching the brand 'Lifesavers', the flavor 'Wint-O-Green', and the product format (mints). Results that deviated in format (like rolls or candy canes) or were ambiguous were not trusted. Size differences were ignored as the product inside was identical."
     }
   },
   "FC ": {
@@ -851,32 +852,29 @@
       "3": "Title: EA SPORTS\u2122 FC 24 - Official Site\nLink: https://www.ea.com/games/ea-sports-fc/fc-24\nSnippet: EA SPORTS FC\u2122 24 is home to 19,000+ fully licensed players, 700+ teams, 100+ stadiums and 30+ leagues across world football."
     },
     "trusted_search_results": [],
-    "llm_trusted_search_results": [
-      2,
-      3
-    ],
+    "llm_trusted_search_results": [],
     "metadata": {
       "results": [
         {
           "index": 1,
           "is_trusted": false,
           "confidence": 0.0,
-          "explanation": "The search result is for the official FC Barcelona website, which does not match the product 'FC' as it is not a specific product but rather a brand or organization."
+          "explanation": "The search result is for the official FC Barcelona website, which does not match the generic query 'FC' as it lacks specific context or descriptors."
         },
         {
           "index": 2,
-          "is_trusted": true,
-          "confidence": 1.0,
-          "explanation": "This result is for EA SPORTS FC\u2122 25, which matches the product 'FC' as it is a specific video game product under the EA SPORTS brand."
+          "is_trusted": false,
+          "confidence": 0.0,
+          "explanation": "This result is for EA SPORTS FC\u2122 25, which is a specific video game and does not match the generic query 'FC' without additional context."
         },
         {
           "index": 3,
-          "is_trusted": true,
-          "confidence": 1.0,
-          "explanation": "This result is for EA SPORTS FC\u2122 24, which also matches the product 'FC' as it is another specific video game product under the EA SPORTS brand."
+          "is_trusted": false,
+          "confidence": 0.0,
+          "explanation": "This result is for EA SPORTS FC\u2122 24, another specific video game, and does not match the generic query 'FC' as it lacks specificity."
         }
       ],
-      "reasoning": "The first search result is not a product but a website for FC Barcelona, which does not match the product query. The second and third results are specific video game products from EA SPORTS, which align with the product 'FC'."
+      "reasoning": "All search results are either specific to a brand (EA SPORTS) or a team (FC Barcelona) and do not provide the necessary context or descriptors to match the generic query 'FC'. Therefore, none of the results can be trusted."
     }
   },
   "Equate Bandages 10 ea Bandages, Flexible Fabric, Antibacterial, Jumbo": {
@@ -916,162 +914,157 @@
           "index": 1,
           "is_trusted": true,
           "confidence": 1.0,
-          "explanation": "The title and description match exactly with the queried product, including brand, format, and count."
+          "explanation": "The title and description match exactly with the queried product, including brand, format, and antibacterial feature."
         },
         {
           "index": 2,
           "is_trusted": true,
           "confidence": 1.0,
-          "explanation": "This result matches the queried product in brand, format, and count, confirming it is the same item."
+          "explanation": "This result matches the queried product in brand, format, and antibacterial feature, confirming it is the same product."
         },
         {
           "index": 3,
           "is_trusted": false,
           "confidence": 0.0,
-          "explanation": "This result specifies 'X-Large' bandages, which indicates a different size than the queried 'Jumbo' bandages."
+          "explanation": "This result specifies 'X-Large' bandages, which is a different size variant than the queried 'Jumbo' bandages."
         },
         {
           "index": 4,
           "is_trusted": false,
           "confidence": 0.0,
-          "explanation": "This result is for a 100 count pack, which does not match the queried 10 count."
+          "explanation": "This result is for a 100 count package, which is a different quantity than the queried 10 count."
         },
         {
           "index": 5,
           "is_trusted": false,
           "confidence": 0.0,
-          "explanation": "This result is too generic and does not specify the count or match the exact product description."
+          "explanation": "The title is too generic and does not specify the count or size, making it ambiguous and untrustworthy."
         },
         {
           "index": 6,
           "is_trusted": false,
           "confidence": 0.0,
-          "explanation": "This result is for 'X-Large' bandages, which is a different size than the queried 'Jumbo' bandages."
+          "explanation": "This result also specifies 'X-Large' bandages, which does not match the queried 'Jumbo' size."
         },
         {
           "index": 7,
           "is_trusted": false,
           "confidence": 0.0,
-          "explanation": "This result is for a 100 count pack, which does not match the queried 10 count."
+          "explanation": "This result is for a 100 count package, which is not the same as the queried 10 count."
         },
         {
           "index": 8,
           "is_trusted": true,
           "confidence": 1.0,
-          "explanation": "The title and description match the queried product exactly, including brand, format, and count."
+          "explanation": "The title and description match the queried product exactly, including brand, format, and antibacterial feature."
         },
         {
           "index": 9,
           "is_trusted": false,
           "confidence": 0.0,
-          "explanation": "This result does not specify the count and is too generic, making it untrustworthy."
+          "explanation": "This result does not specify the count and is ambiguous, making it untrustworthy."
         },
         {
           "index": 10,
           "is_trusted": false,
           "confidence": 0.0,
-          "explanation": "This result does not match the brand or specific product details, making it untrustworthy."
+          "explanation": "This result is too generic and does not match the specific product title or description."
         }
       ],
-      "reasoning": "The trusted results (1, 2, and 8) all match the queried product in brand, format, and count. The other results either differ in size, count, or are too generic to be considered the same product."
+      "reasoning": "The trusted results (1, 2, and 8) all match the queried product in brand, format, and antibacterial feature, while the others either differ in size, quantity, or are too generic to be trusted."
     }
   },
-  "starbucks doubleshot mexican mocha energy coffee beverage 15 oz energy coffee beverage, mexican mocha": {
-    "product_title": "starbucks doubleshot mexican mocha energy coffee beverage 15 oz",
-    "product_description": "energy coffee beverage, mexican mocha",
+  "Monster Ultra PeachyKeen 12zCn ": {
+    "product_title": "Monster Ultra PeachyKeen 12zCn",
+    "product_description": "",
     "search_results": {
-      "1": "Title: Starbucks Double Shot Mocha Energy Coffee Drink\nLink: https://www.heb.com/product-detail/starbucks-double-shot-mocha-energy-coffee-drink/1171573\nSnippet: Energy ingredients per can: maltodextrin 2000 mg, taurine 1800 mg, L-carnitine 450 mg, inositol 180 mg, panax ginseng 325 mg, guarana 90 mg. Made in USA.",
-      "2": "Title: Starbucks DoubleShot Energy Coffee Beverage, Mexican ...\nLink: https://www.cub.com/sm/pickup/rsid/1658/product/starbucks-doubleshot-energy-coffee-beverage-mexican-mocha-id-00012000151828?srsltid=AfmBOoqaD0SI3z6g2BF4LvicbJy5t6cIB-c569hkBs9_jk5roW4_A8Re\nSnippet: Energy Ingredients Per Can: maltodextrin 2,000mg taurine 1,800,g, inositol 180mg, panax ginseng 325mg, guarana 90mg. Guarana, B vitamins, ginseng. Begin with ...",
-      "3": "Title: Starbucks Doubleshot Energy Mexican Mocha ...\nLink: https://hy-vee.com/grocery/PD18559695/Starbucks-Doubleshot-Energy-Mexican-Mocha-Energy-Coffee-Drink?srsltid=AfmBOoqkQ8L9Y-o749-e_l57KlRI709TLPdrCIV0QGalCiSzgz7uZ3xs\nSnippet: Brewed Starbucks Coffee (Water, Coffee), Reduced Fat Milk, Skim Milk, Sugar, Maltodextrin, Dextrose, Taurine, Natural Flavors, Cellulose Gel, Panax Ginseng ...",
-      "4": "Title: Starbucks Energy Coffee Beverage, Mexican Mocha 15 oz\nLink: https://www.northgatepronto.com/shop/starbucks_energy_coffee_beverage_mexican_mocha_15_oz/p/4827421\nSnippet: 200 calories per can. Energy Ingredients Per Can: maltodextrin 2,000mg taurine 1,800,g, inositol 180mg, panax ginseng 325mg, guarana 90mg. Guarana, B vitamins, ...",
-      "5": "Title: Starbucks Energy Coffee Beverage, Mexican Mocha\nLink: https://www.instacart.com/products/3200181-starbucks-doubleshot-energy-mexican-mocha-coffee-15-fl-oz\nSnippet: 200 calories per can. Energy Ingredients Per Can: maltodextrin 2,000mg taurine 1,800,g, inositol 180mg, panax ginseng 325mg, guarana 90mg. Guarana, B vitamins, ...",
-      "6": "Title: Starbucks Doubleshot Energy Mexican Mocha ... - Walmart\nLink: https://www.walmart.com/ip/Starbucks-Doubleshot-Energy-Mexican-Mocha-Energy-Coffee-Beverage-15-Fl-Oz-Can/50863065\nSnippet: Begin with the bold taste of Starbucks coffee and a blend of ginseng, guarana and B vitamins. Then top it all off with a Mexican chocolate-inspired kick of flavor.",
-      "7": "Title: Starbucks Energy Coffee Beverage, Mexican Mocha\nLink: https://www.instacart.com/products/3200181-starbucks-doubleshot-energy-mexican-mocha-coffee-15-fl-oz\nSnippet: Juice \u00b7 Soda \u00b7 Tea \u00b7 Water \u00b7 Organic grocery. More ways to shop. Shop by location \u00b7 Shop ... Starbucks Energy Coffee Beverage, Mexican Mocha. 15 fl oz. Rate ...",
-      "8": "Title: Amazon.com: Starbucks Doubleshot Energy Drink Coffee ...\nLink: https://www.amazon.com/Starbucks-Doubleshot-Energy-Coffee-Mocha/dp/B001B3UPQE\nSnippet: Starbucks Doubleshot Energy Drink Coffee Beverage, Mocha, Iced Coffee, 15 fl oz Cans ... V8 + ...",
-      "9": "Title: Starbucks Energy Coffee Beverage, Mexican Mocha 15 oz\nLink: https://www.northgatepronto.com/shop/starbucks_energy_coffee_beverage_mexican_mocha_15_oz/p/4827421\nSnippet: Juice and Drinks \u00b7 Milk Alternatives \u00b7 Almond Milk \u00b7 Coconut Milk \u00b7 Rice Milk \u00b7 Soy ... Doubleshot.com. Comments or questions? Call 1-800-211-8307. Doubleshot ...",
-      "10": "Title: Starbucks Doubleshot Energy 15 oz Mexican Mocha ...\nLink: https://www.fleetfarm.com/detail/starbucks-doubleshot-energy-15-oz-mexican-mocha-energy-coffee/0000000267181?srsltid=AfmBOoqVmDxm279Xn6VjOkXzw0AUwqT2dlxOwNriepvi5sIFHOgdxVFq\nSnippet: Juice \u00b7 Powdered Drink Mixes \u00b7 Soft Drinks \u00b7 Sports & Energy Drinks \u00b7 Tea \u00b7 Water \u00b7 Nuts ... Bottled Coffee Drinks; Starbucks Doubleshot Energy 15 oz Mexican ..."
+      "1": "Title: Monster Energy Ultra Peachy Keen Energy Drink\nLink: https://www.heb.com/product-detail/monster-energy-ultra-peachy-keen-energy-drink/6372516\nSnippet: Carbonated Water, Citric Acid, Taurine, Sodium Citrate, Panax Ginseng Flavor, Potassium Sorbate (Preservative), Caffeine, Sucralose, Modified Corn Starch, ...",
+      "2": "Title: Monster Energy Drink, Zero Sugar, Ultra Peachy Keen\nLink: https://www.freshbybrookshires.com/product/monster-energy-drink-ultra-peachy-keen-id-00070847029427\nSnippet: Ingredients. Carbonated Water, Citric Acid, Taurine, Sodium Citrate ... Monster Energy Drink, Zero Sugar, Zero Ultra, 12 Pack - 12 Each. Add Monster ...",
+      "3": "Title: Monster\u00ae Zero Sugar Ultra Peachy Keen Energy Drink ...\nLink: https://www.foodsco.net/p/monster-zero-sugar-ultra-peachy-keen-energy-drink-multipack-cans/0007084702931\nSnippet: Ingredients: Carbonated Water, Citric Acid, Taurine, Sodium Citrate, Panax Ginseng Flavor, Potassium Sorbate (Preservative), Caffeine, Sucralose, Modified Corn ...",
+      "4": "Title: Monster\u00ae Zero Sugar Ultra Peachy Keen Energy Drink Can\nLink: https://www.jaycfoods.com/p/monster-zero-sugar-ultra-peachy-keen-energy-drink-can/0007084702942\nSnippet: Ingredients: Carbonated Water, Citric Acid, Taurine, Sodium Citrate, Panax Ginseng Flavor, Potassium Sorbate (Preservative), Caffeine, Sucralose, Modified Corn ...",
+      "5": "Title: Monster Energy Ultra Peachy Keen - 12-16 Fl. Oz.\nLink: https://www.haggen.com/shop/product-details.970126903.html\nSnippet: FULL FLAVOR, ZERO SUGAR | Monster Energy Ultra Peachy Keen has zero sugar but with all the flavor you're accustomed to and packed with our sugar-free Monster Energy blend.",
+      "6": "Title: Monster, Energy Ultra Peachy Keen, 6pk, 12 Fl Oz\nLink: https://www.amazon.com/Monster-Energy-Ultra-Peachy-Keen/dp/B0CM6LVV2K\nSnippet: Monster Energy Juice Rio Punch, Energy + Juice, Energy Drink, 16 Ounce (Pack of 15).",
+      "7": "Title: Monster Energy Ultra Peachy Keen, 12 fl oz, 6 Pack\nLink: https://www.walmart.com/ip/Monster-Energy-Ultra-Peachy-Keen-Sugar-Free-Energy-Drink-12-fl-oz-6pk/818074926\nSnippet: Alex. I'm super picky about energy drinks as most of then taste like cough syrup or over-sweetened juice concentrate. It tastes like nectarines and peaches ...",
+      "8": "Title: Zero-Sugar Ultra Peachy Keen\nLink: https://www.monsterenergy.com/en-us/energy-drinks/zero-sugar/ultra-peachy-keen/\nSnippet: Original. Zero Sugar. Coffee. Juice. Tea. Promotions Where To Buy Careers About Us FAQs Contact Us \u00b7 All Products. Zero-Sugar Ultra Peachy Keen. Flavor Profile.",
+      "9": "Title: Monster\u00ae Zero Sugar Ultra Peachy Keen Energy Drink ...\nLink: https://www.kroger.com/p/monster-zero-sugar-ultra-peachy-keen-energy-drink-multipack-cans/0007084702931\nSnippet: FULL FLAVOR, ZERO SUGAR: Monster Ultra Peachy Keen has 10 calories and zero sugar but with all the flavor you're accustomed to and packed with our sugar-free Monster energy blend.",
+      "10": "Title: Monster Energy, Ultra Peachy Keen 12 fl Oz\nLink: https://we-are-beverages-online.square.site/product/Monster_Energy_Ultra_Peachy_Keen_12-fl-Oz/986?cfa=gpl&channel=CH_Ac6ZOqPMCBaLRR4R9k9hO7DJJMIyov4tOeufYRlQuYC&srsltid=AfmBOorjyeDHw04eSRAs9PkgN4Gtvf5ojkPLgdIuFE2nzZ4_Tsk09Pjq\nSnippet: Monster Energy, Ultra Peachy Keen 12 fl Oz. $2.50 $1.25. 1. How to get it ... Juice 16 fl, Oz. 24Pk. $59.99 $57.99 \u00b7 Monster Energy Ultra Watermelon, Sugar ..."
     },
     "trusted_search_results": [
-      2,
-      3,
-      6,
+      1,
+      5,
       7,
       10
     ],
     "llm_trusted_search_results": [
-      2,
-      3,
-      4,
+      1,
       5,
-      6,
       7,
-      9,
       10
     ],
     "metadata": {
       "results": [
         {
           "index": 1,
-          "is_trusted": false,
-          "confidence": 0.0,
-          "explanation": "The title does not match the queried product exactly; it lacks 'Mexican' in the flavor description."
+          "is_trusted": true,
+          "confidence": 0.9,
+          "explanation": "This result matches the brand 'Monster', the flavor 'Ultra Peachy Keen', and the format 'Energy Drink', making it a trusted match."
         },
         {
           "index": 2,
-          "is_trusted": true,
-          "confidence": 1.0,
-          "explanation": "This result matches the exact product title and description, including the 'Mexican Mocha' flavor."
+          "is_trusted": false,
+          "confidence": 0.7,
+          "explanation": "This result includes 'Zero Sugar', which is a variant not present in the original query, thus it does not match exactly."
         },
         {
           "index": 3,
-          "is_trusted": true,
-          "confidence": 1.0,
-          "explanation": "The title and flavor 'Mexican Mocha' match the queried product exactly."
+          "is_trusted": false,
+          "confidence": 0.7,
+          "explanation": "This result also specifies 'Zero Sugar', which is a variant not included in the original product title, making it untrusted."
         },
         {
           "index": 4,
-          "is_trusted": true,
-          "confidence": 1.0,
-          "explanation": "This result matches the product title and flavor 'Mexican Mocha' exactly."
+          "is_trusted": false,
+          "confidence": 0.7,
+          "explanation": "Similar to the previous results, this one mentions 'Zero Sugar', which is not part of the queried product, leading to a mismatch."
         },
         {
           "index": 5,
           "is_trusted": true,
-          "confidence": 1.0,
-          "explanation": "The title and flavor 'Mexican Mocha' match the queried product exactly."
+          "confidence": 0.85,
+          "explanation": "This result matches the brand and flavor, and while it mentions 'Zero Sugar', it is still considered a trusted match due to the overall alignment with the product."
         },
         {
           "index": 6,
-          "is_trusted": true,
-          "confidence": 1.0,
-          "explanation": "This result matches the product title and flavor 'Mexican Mocha' exactly."
+          "is_trusted": false,
+          "confidence": 0.5,
+          "explanation": "This result is for a different product (Energy Juice Rio Punch), which does not match the queried product at all."
         },
         {
           "index": 7,
           "is_trusted": true,
-          "confidence": 1.0,
-          "explanation": "The title and flavor 'Mexican Mocha' match the queried product exactly."
+          "confidence": 0.9,
+          "explanation": "This result matches the brand, flavor, and format, making it a trusted match."
         },
         {
           "index": 8,
           "is_trusted": false,
-          "confidence": 0.0,
-          "explanation": "The title mentions 'Mocha' but does not specify 'Mexican Mocha', which is a critical flavor difference."
+          "confidence": 0.6,
+          "explanation": "This result is too generic and does not specify the product format or brand clearly, leading to uncertainty."
         },
         {
           "index": 9,
-          "is_trusted": true,
-          "confidence": 1.0,
-          "explanation": "This result matches the product title and flavor 'Mexican Mocha' exactly."
+          "is_trusted": false,
+          "confidence": 0.7,
+          "explanation": "This result includes 'Zero Sugar', which is a variant not present in the original query, thus it does not match exactly."
         },
         {
           "index": 10,
           "is_trusted": true,
-          "confidence": 1.0,
-          "explanation": "The title and flavor 'Mexican Mocha' match the queried product exactly."
+          "confidence": 0.9,
+          "explanation": "This result matches the brand, flavor, and format, making it a trusted match."
         }
       ],
-      "reasoning": "The search results were evaluated based on brand consistency, product format, and exact flavor matching. Results that did not include 'Mexican Mocha' in the title were rejected, while those that matched the full title and flavor were trusted."
+      "reasoning": "The evaluation focused on matching the brand 'Monster', the specific flavor 'Ultra Peachy Keen', and ensuring that no variant like 'Zero Sugar' was included unless specified in the query. Results that included 'Zero Sugar' were deemed untrusted, while those that matched the exact title and description were trusted."
     }
   },
   "Q KOLA ": {
@@ -1113,263 +1106,97 @@
           "index": 1,
           "is_trusted": false,
           "confidence": 0.0,
-          "explanation": "The title 'Kola' does not match the exact product title 'Q KOLA', and it lacks the brand identity needed for trust."
+          "explanation": "The title 'Kola' is too generic and does not match the specific product title 'Q KOLA', which is necessary for trust."
         },
         {
           "index": 2,
           "is_trusted": true,
           "confidence": 1.0,
-          "explanation": "This result matches the exact product title 'Q Kola' and includes the same ingredients, confirming it is the same product."
+          "explanation": "This result matches the exact product title 'Q Kola' and includes the same brand and format (drink), making it a trusted result."
         },
         {
           "index": 3,
           "is_trusted": true,
           "confidence": 1.0,
-          "explanation": "The title 'Q Kola' matches exactly, and the ingredients listed are consistent with the queried product."
+          "explanation": "The title 'Q Kola' matches exactly with the queried product, and the description aligns with the product's ingredients."
         },
         {
           "index": 4,
           "is_trusted": false,
           "confidence": 0.0,
-          "explanation": "The title 'Q Mixers Kola' introduces a brand variation that does not match the exact product title 'Q KOLA'."
+          "explanation": "The title 'Q Mixers Kola' introduces a brand variation that does not match the exact product title 'Q KOLA', leading to mistrust."
         },
         {
           "index": 5,
           "is_trusted": true,
           "confidence": 1.0,
-          "explanation": "The title 'Q Kola by Joel McHale 4pk' matches the product name, and the description aligns with the ingredients of the queried product."
+          "explanation": "The title 'Q Kola by Joel McHale 4pk' includes the exact product name and matches the description, confirming it as a trusted result."
         },
         {
           "index": 6,
           "is_trusted": false,
           "confidence": 0.0,
-          "explanation": "This is a duplicate of search result 1, which is not trusted due to the title mismatch."
+          "explanation": "This result is a duplicate of Search Result ID 1, which is too generic and does not match the specific product title."
         },
         {
           "index": 7,
           "is_trusted": false,
           "confidence": 0.0,
-          "explanation": "This result does not provide a specific product title and is more of a general brand page, lacking the exact product match."
+          "explanation": "This result does not provide a specific product title and is more of a general brand page, making it untrustworthy."
         },
         {
           "index": 8,
           "is_trusted": false,
           "confidence": 0.0,
-          "explanation": "The title 'Spectacular Kola' does not match 'Q KOLA', indicating a different product."
+          "explanation": "The title 'Spectacular Kola' does not match the exact product title 'Q KOLA', leading to mistrust."
         },
         {
           "index": 9,
           "is_trusted": true,
           "confidence": 1.0,
-          "explanation": "The title 'Q Drinks Q Kola 4 pack' matches the product name, confirming it is the same product."
+          "explanation": "The title 'Q Drinks Q Kola 4 pack' matches the product name and is a specific variant, making it a trusted result."
         },
         {
           "index": 10,
           "is_trusted": true,
           "confidence": 1.0,
-          "explanation": "This is a duplicate of search result 5, which is trusted due to the exact title match and consistent ingredients."
+          "explanation": "This result is a duplicate of Search Result ID 5, which is trusted due to matching the exact product title and description."
         }
       ],
-      "reasoning": "The evaluations focused on matching the exact product title 'Q KOLA' and ensuring ingredient consistency. Results with variations in brand or product naming, such as 'Kola' or 'Q Mixers Kola', were rejected. Trusted results included those that matched the title and had consistent ingredient listings."
+      "reasoning": "The evaluations focused on matching the exact product title 'Q KOLA' and ensuring that the brand and format were consistent. Generic titles or those that did not match the specificity of the queried product were deemed untrustworthy."
     }
   },
-  "Monster Ultra PeachyKeen 12zCn ": {
-    "product_title": "Monster Ultra PeachyKeen 12zCn",
-    "product_description": "",
+  "starbucks doubleshot mexican mocha energy coffee beverage 15 oz energy coffee beverage, mexican mocha": {
+    "product_title": "starbucks doubleshot mexican mocha energy coffee beverage 15 oz",
+    "product_description": "energy coffee beverage, mexican mocha",
     "search_results": {
-      "1": "Title: Monster Energy Ultra Peachy Keen Energy Drink\nLink: https://www.heb.com/product-detail/monster-energy-ultra-peachy-keen-energy-drink/6372516\nSnippet: Carbonated Water, Citric Acid, Taurine, Sodium Citrate, Panax Ginseng Flavor, Potassium Sorbate (Preservative), Caffeine, Sucralose, Modified Corn Starch, ...",
-      "2": "Title: Monster Energy Drink, Zero Sugar, Ultra Peachy Keen\nLink: https://www.freshbybrookshires.com/product/monster-energy-drink-ultra-peachy-keen-id-00070847029427\nSnippet: Ingredients. Carbonated Water, Citric Acid, Taurine, Sodium Citrate ... Monster Energy Drink, Zero Sugar, Zero Ultra, 12 Pack - 12 Each. Add Monster ...",
-      "3": "Title: Monster\u00ae Zero Sugar Ultra Peachy Keen Energy Drink ...\nLink: https://www.foodsco.net/p/monster-zero-sugar-ultra-peachy-keen-energy-drink-multipack-cans/0007084702931\nSnippet: Ingredients: Carbonated Water, Citric Acid, Taurine, Sodium Citrate, Panax Ginseng Flavor, Potassium Sorbate (Preservative), Caffeine, Sucralose, Modified Corn ...",
-      "4": "Title: Monster\u00ae Zero Sugar Ultra Peachy Keen Energy Drink Can\nLink: https://www.jaycfoods.com/p/monster-zero-sugar-ultra-peachy-keen-energy-drink-can/0007084702942\nSnippet: Ingredients: Carbonated Water, Citric Acid, Taurine, Sodium Citrate, Panax Ginseng Flavor, Potassium Sorbate (Preservative), Caffeine, Sucralose, Modified Corn ...",
-      "5": "Title: Monster Energy Ultra Peachy Keen - 12-16 Fl. Oz.\nLink: https://www.haggen.com/shop/product-details.970126903.html\nSnippet: FULL FLAVOR, ZERO SUGAR | Monster Energy Ultra Peachy Keen has zero sugar but with all the flavor you're accustomed to and packed with our sugar-free Monster Energy blend.",
-      "6": "Title: Monster, Energy Ultra Peachy Keen, 6pk, 12 Fl Oz\nLink: https://www.amazon.com/Monster-Energy-Ultra-Peachy-Keen/dp/B0CM6LVV2K\nSnippet: Monster Energy Juice Rio Punch, Energy + Juice, Energy Drink, 16 Ounce (Pack of 15).",
-      "7": "Title: Monster Energy Ultra Peachy Keen, 12 fl oz, 6 Pack\nLink: https://www.walmart.com/ip/Monster-Energy-Ultra-Peachy-Keen-Sugar-Free-Energy-Drink-12-fl-oz-6pk/818074926\nSnippet: Alex. I'm super picky about energy drinks as most of then taste like cough syrup or over-sweetened juice concentrate. It tastes like nectarines and peaches ...",
-      "8": "Title: Zero-Sugar Ultra Peachy Keen\nLink: https://www.monsterenergy.com/en-us/energy-drinks/zero-sugar/ultra-peachy-keen/\nSnippet: Original. Zero Sugar. Coffee. Juice. Tea. Promotions Where To Buy Careers About Us FAQs Contact Us \u00b7 All Products. Zero-Sugar Ultra Peachy Keen. Flavor Profile.",
-      "9": "Title: Monster\u00ae Zero Sugar Ultra Peachy Keen Energy Drink ...\nLink: https://www.kroger.com/p/monster-zero-sugar-ultra-peachy-keen-energy-drink-multipack-cans/0007084702931\nSnippet: FULL FLAVOR, ZERO SUGAR: Monster Ultra Peachy Keen has 10 calories and zero sugar but with all the flavor you're accustomed to and packed with our sugar-free Monster energy blend.",
-      "10": "Title: Monster Energy, Ultra Peachy Keen 12 fl Oz\nLink: https://we-are-beverages-online.square.site/product/Monster_Energy_Ultra_Peachy_Keen_12-fl-Oz/986?cfa=gpl&channel=CH_Ac6ZOqPMCBaLRR4R9k9hO7DJJMIyov4tOeufYRlQuYC&srsltid=AfmBOorjyeDHw04eSRAs9PkgN4Gtvf5ojkPLgdIuFE2nzZ4_Tsk09Pjq\nSnippet: Monster Energy, Ultra Peachy Keen 12 fl Oz. $2.50 $1.25. 1. How to get it ... Juice 16 fl, Oz. 24Pk. $59.99 $57.99 \u00b7 Monster Energy Ultra Watermelon, Sugar ..."
+      "1": "Title: Starbucks Double Shot Mocha Energy Coffee Drink\nLink: https://www.heb.com/product-detail/starbucks-double-shot-mocha-energy-coffee-drink/1171573\nSnippet: Energy ingredients per can: maltodextrin 2000 mg, taurine 1800 mg, L-carnitine 450 mg, inositol 180 mg, panax ginseng 325 mg, guarana 90 mg. Made in USA.",
+      "2": "Title: Starbucks DoubleShot Energy Coffee Beverage, Mexican ...\nLink: https://www.cub.com/sm/pickup/rsid/1658/product/starbucks-doubleshot-energy-coffee-beverage-mexican-mocha-id-00012000151828?srsltid=AfmBOoqaD0SI3z6g2BF4LvicbJy5t6cIB-c569hkBs9_jk5roW4_A8Re\nSnippet: Energy Ingredients Per Can: maltodextrin 2,000mg taurine 1,800,g, inositol 180mg, panax ginseng 325mg, guarana 90mg. Guarana, B vitamins, ginseng. Begin with ...",
+      "3": "Title: Starbucks Doubleshot Energy Mexican Mocha ...\nLink: https://hy-vee.com/grocery/PD18559695/Starbucks-Doubleshot-Energy-Mexican-Mocha-Energy-Coffee-Drink?srsltid=AfmBOoqkQ8L9Y-o749-e_l57KlRI709TLPdrCIV0QGalCiSzgz7uZ3xs\nSnippet: Brewed Starbucks Coffee (Water, Coffee), Reduced Fat Milk, Skim Milk, Sugar, Maltodextrin, Dextrose, Taurine, Natural Flavors, Cellulose Gel, Panax Ginseng ...",
+      "4": "Title: Starbucks Energy Coffee Beverage, Mexican Mocha 15 oz\nLink: https://www.northgatepronto.com/shop/starbucks_energy_coffee_beverage_mexican_mocha_15_oz/p/4827421\nSnippet: 200 calories per can. Energy Ingredients Per Can: maltodextrin 2,000mg taurine 1,800,g, inositol 180mg, panax ginseng 325mg, guarana 90mg. Guarana, B vitamins, ...",
+      "5": "Title: Starbucks Energy Coffee Beverage, Mexican Mocha\nLink: https://www.instacart.com/products/3200181-starbucks-doubleshot-energy-mexican-mocha-coffee-15-fl-oz\nSnippet: 200 calories per can. Energy Ingredients Per Can: maltodextrin 2,000mg taurine 1,800,g, inositol 180mg, panax ginseng 325mg, guarana 90mg. Guarana, B vitamins, ...",
+      "6": "Title: Starbucks Doubleshot Energy Mexican Mocha ... - Walmart\nLink: https://www.walmart.com/ip/Starbucks-Doubleshot-Energy-Mexican-Mocha-Energy-Coffee-Beverage-15-Fl-Oz-Can/50863065\nSnippet: Begin with the bold taste of Starbucks coffee and a blend of ginseng, guarana and B vitamins. Then top it all off with a Mexican chocolate-inspired kick of flavor.",
+      "7": "Title: Starbucks Energy Coffee Beverage, Mexican Mocha\nLink: https://www.instacart.com/products/3200181-starbucks-doubleshot-energy-mexican-mocha-coffee-15-fl-oz\nSnippet: Juice \u00b7 Soda \u00b7 Tea \u00b7 Water \u00b7 Organic grocery. More ways to shop. Shop by location \u00b7 Shop ... Starbucks Energy Coffee Beverage, Mexican Mocha. 15 fl oz. Rate ...",
+      "8": "Title: Amazon.com: Starbucks Doubleshot Energy Drink Coffee ...\nLink: https://www.amazon.com/Starbucks-Doubleshot-Energy-Coffee-Mocha/dp/B001B3UPQE\nSnippet: Starbucks Doubleshot Energy Drink Coffee Beverage, Mocha, Iced Coffee, 15 fl oz Cans ... V8 + ...",
+      "9": "Title: Starbucks Energy Coffee Beverage, Mexican Mocha 15 oz\nLink: https://www.northgatepronto.com/shop/starbucks_energy_coffee_beverage_mexican_mocha_15_oz/p/4827421\nSnippet: Juice and Drinks \u00b7 Milk Alternatives \u00b7 Almond Milk \u00b7 Coconut Milk \u00b7 Rice Milk \u00b7 Soy ... Doubleshot.com. Comments or questions? Call 1-800-211-8307. Doubleshot ...",
+      "10": "Title: Starbucks Doubleshot Energy 15 oz Mexican Mocha ...\nLink: https://www.fleetfarm.com/detail/starbucks-doubleshot-energy-15-oz-mexican-mocha-energy-coffee/0000000267181?srsltid=AfmBOoqVmDxm279Xn6VjOkXzw0AUwqT2dlxOwNriepvi5sIFHOgdxVFq\nSnippet: Juice \u00b7 Powdered Drink Mixes \u00b7 Soft Drinks \u00b7 Sports & Energy Drinks \u00b7 Tea \u00b7 Water \u00b7 Nuts ... Bottled Coffee Drinks; Starbucks Doubleshot Energy 15 oz Mexican ..."
     },
     "trusted_search_results": [
-      1,
-      5,
+      2,
+      3,
+      6,
       7,
       10
     ],
-    "llm_trusted_search_results": [
-      1,
-      5,
-      7,
-      10
-    ],
-    "metadata": {
-      "results": [
-        {
-          "index": 1,
-          "is_trusted": true,
-          "confidence": 0.9,
-          "explanation": "This result matches the brand and product name exactly, and the ingredients align with the expected formulation for the Ultra Peachy Keen variant."
-        },
-        {
-          "index": 2,
-          "is_trusted": false,
-          "confidence": 0.7,
-          "explanation": "This result includes 'Zero Sugar' in the title, indicating a different formulation than the original product, which is not a zero sugar variant."
-        },
-        {
-          "index": 3,
-          "is_trusted": false,
-          "confidence": 0.7,
-          "explanation": "Similar to result 2, this result specifies 'Zero Sugar', indicating it is not the same product as the original Monster Ultra Peachy Keen."
-        },
-        {
-          "index": 4,
-          "is_trusted": false,
-          "confidence": 0.7,
-          "explanation": "This result also indicates 'Zero Sugar', which means it is a different product variant than the original."
-        },
-        {
-          "index": 5,
-          "is_trusted": true,
-          "confidence": 0.85,
-          "explanation": "This result matches the brand and product name closely, and while it mentions 'zero sugar', it is still recognized as the same product line."
-        },
-        {
-          "index": 6,
-          "is_trusted": false,
-          "confidence": 0.5,
-          "explanation": "This result is for a different product (Energy Juice Rio Punch) and does not match the queried product."
-        },
-        {
-          "index": 7,
-          "is_trusted": true,
-          "confidence": 0.9,
-          "explanation": "This result matches the brand and product name exactly, and the description confirms it is the same product."
-        },
-        {
-          "index": 8,
-          "is_trusted": false,
-          "confidence": 0.6,
-          "explanation": "This result is labeled as 'Zero Sugar', indicating it is a different formulation than the original product."
-        },
-        {
-          "index": 9,
-          "is_trusted": false,
-          "confidence": 0.7,
-          "explanation": "This result also specifies 'Zero Sugar', indicating it is not the same product as the original Monster Ultra Peachy Keen."
-        },
-        {
-          "index": 10,
-          "is_trusted": true,
-          "confidence": 0.9,
-          "explanation": "This result matches the brand and product name exactly, confirming it is the same product."
-        }
-      ],
-      "reasoning": "The trusted results must match the original product's brand, formulation, and specific product name. Variants like 'Zero Sugar' are not trusted as they represent different formulations. Results that match the exact title and description of the queried product are considered trusted."
-    }
-  },
-  "Labatt Ale 12 ea ": {
-    "product_title": "Labatt Ale 12 ea",
-    "product_description": "",
-    "search_results": {
-      "1": "Title: Labatt Beer, Canadian Pilsener, Imported 12 Ea | Pilsner\nLink: https://www.applesmarket.com/shop/beer_wine_spirits/beer/pilsner/labatt_beer_canadian_pilsener_imported_12_ea/p/2374139\nSnippet: Brewed with the finest ingredients including renowned Hallertau hops and pure Canadian 2-row malted barley. Labatt Blue has a clean refreshing taste with a slightly sweet finish.",
-      "2": "Title: Labatt Beer, Canadian Pilsener 12 ea\nLink: https://www.elmersfresh.com/shop/beer_wine_spirits/beer/labatt_beer_canadian_pilsener_12_ea/p/2374142\nSnippet: Crisp, Clean, Refreshing: Brewed with the finest ingredients including renowned hallertau hops and pure canadian 2-row malted barley. Labatt Blue has a clean refreshing taste with a slightly sweet finish.",
-      "3": "Title: Labatt Beer, Canadian Pilsener 12 ea\nLink: https://www.leppinksfoodcenters.com/shop/beer_wine_spirits/beer/labatt_beer_canadian_pilsener_12_ea/p/2374142\nSnippet: Crisp, Clean, Refreshing: Brewed with the finest ingredients including renowned hallertau hops and pure canadian 2-row malted barley. Labatt Blue has a clean ...",
-      "4": "Title: Labatt Beer, Canadian Pilsener 12 ea\nLink: https://www.millerandsonssupermarket.com/shop/beer_wine_spirits/beer/labatt_beer_canadian_pilsener_12_ea/p/2374142\nSnippet: Crisp, Clean, Refreshing: Brewed with the finest ingredients including renowned hallertau hops and pure canadian 2-row malted barley. Labatt Blue has a clean ...",
-      "5": "Title: Labatt Beer, Canadian Pilsener 12 Ea\nLink: https://shop.ingles-markets.com/shop/beer_wine_spirits/beer/labatt_beer_canadian_pilsener_12_ea/p/2374142\nSnippet: Brewed with the finest ingredients including renowned hallertau hops and pure canadian 2-row malted barley. Labatt Blue has a clean refreshing taste.",
-      "6": "Title: Labatt USA: Welcome\nLink: https://www.labattusa.com/\nSnippet: Labatt USA extends the great brewing tradition with Labatt Blue and Labatt Blue Light leading the charge.",
-      "7": "Title: Labatt Beer, Canadian Pilsener 12 Ea\nLink: https://www.andysiga.com/shop/beer_wine_spirits/beer/labatt_beer_canadian_pilsener_12_ea/p/2374142\nSnippet: Juice and Drinks \u00b7 Milk Alternatives \u00b7 Almond Milk \u00b7 Coconut Milk \u00b7 Rice Milk \u00b7 Soy ... Labatt Beer, Canadian Pilsener 12 Ea.",
-      "8": "Title: Labatt Beer, Canadian Pilsener 12 ea\nLink: https://www.elmersfresh.com/shop/beer_wine_spirits/beer/labatt_beer_canadian_pilsener_12_ea/p/2374142\nSnippet: Juice & Lemonade \u00b7 Apple \u00b7 Cider \u00b7 Cranberry \u00b7 Fruit & Berry \u00b7 Grape \u00b7 Juice Boxes \u00b7 Lemon Juice & Lemonade \u00b7 Lime Juice & Limeade \u00b7 Orange \u00b7 Pineapple ...",
-      "9": "Title: Labatt Beer, Canadian Pilsener 12 ea\nLink: https://www.leppinksfoodcenters.com/shop/beer_wine_spirits/beer/labatt_beer_canadian_pilsener_12_ea/p/2374142\nSnippet: Juice and Drinks \u00b7 Milk Alternatives \u00b7 Almond Milk \u00b7 Coconut Milk \u00b7 Rice Milk \u00b7 Soy ... Labatt Beer, Canadian Pilsener 12 ea.",
-      "10": "Title: Labatt Beer, Canadian Pilsener 12 ea\nLink: https://www.millerandsonssupermarket.com/shop/beer_wine_spirits/beer/labatt_beer_canadian_pilsener_12_ea/p/2374135\nSnippet: Juice and Drinks \u00b7 Orange \u00b7 Milk Alternatives \u00b7 Almond Milk \u00b7 Coconut Milk \u00b7 Rice Milk ... Labatt Beer, Canadian Pilsener 12 ea."
-    },
-    "trusted_search_results": [],
-    "llm_trusted_search_results": [],
-    "metadata": {
-      "results": [
-        {
-          "index": 1,
-          "is_trusted": false,
-          "confidence": 0.0,
-          "explanation": "The search result is for 'Labatt Beer, Canadian Pilsener', which is a different beer classification than 'Labatt Ale'. They have different ingredients and tax rates."
-        },
-        {
-          "index": 2,
-          "is_trusted": false,
-          "confidence": 0.0,
-          "explanation": "This result is also for 'Labatt Beer, Canadian Pilsener', which does not match the queried product 'Labatt Ale'."
-        },
-        {
-          "index": 3,
-          "is_trusted": false,
-          "confidence": 0.0,
-          "explanation": "Similar to previous results, this is for 'Labatt Beer, Canadian Pilsener', not 'Labatt Ale', leading to a mismatch."
-        },
-        {
-          "index": 4,
-          "is_trusted": false,
-          "confidence": 0.0,
-          "explanation": "This result is for 'Labatt Beer, Canadian Pilsener', which is not the same as 'Labatt Ale'."
-        },
-        {
-          "index": 5,
-          "is_trusted": false,
-          "confidence": 0.0,
-          "explanation": "This result is for 'Labatt Beer, Canadian Pilsener', which does not match the queried product 'Labatt Ale'."
-        },
-        {
-          "index": 6,
-          "is_trusted": false,
-          "confidence": 0.0,
-          "explanation": "This is a general company page for Labatt USA and does not represent a specific product."
-        },
-        {
-          "index": 7,
-          "is_trusted": false,
-          "confidence": 0.0,
-          "explanation": "This result is for 'Labatt Beer, Canadian Pilsener', which is not the same as 'Labatt Ale'."
-        },
-        {
-          "index": 8,
-          "is_trusted": false,
-          "confidence": 0.0,
-          "explanation": "This result is for 'Labatt Beer, Canadian Pilsener', which does not match the queried product 'Labatt Ale'."
-        },
-        {
-          "index": 9,
-          "is_trusted": false,
-          "confidence": 0.0,
-          "explanation": "This result is for 'Labatt Beer, Canadian Pilsener', which is not the same as 'Labatt Ale'."
-        },
-        {
-          "index": 10,
-          "is_trusted": false,
-          "confidence": 0.0,
-          "explanation": "This result is for 'Labatt Beer, Canadian Pilsener', which does not match the queried product 'Labatt Ale'."
-        }
-      ],
-      "reasoning": "All search results are for 'Labatt Beer, Canadian Pilsener', which is a different classification than 'Labatt Ale'. Since they have different ingredients and tax implications, none of the results can be trusted."
-    }
-  },
-  "S SEL TEA GREEN DECAF ": {
-    "product_title": "S SEL TEA GREEN DECAF",
-    "product_description": "",
-    "search_results": {
-      "1": "Title: Decaf Green Tea\nLink: https://celestialseasonings.com/products/decaf-green\nSnippet: 2,000 calories a day is used for general nutrition advice. Ingredients: Decaffeinated Green Tea, Decaffeinated White Tea, Ascorbic Acid (Vitamin C). Please ...",
-      "2": "Title: Celestial Seasonings Green Tea, Decaffeinated, 40 Count ...\nLink: https://www.amazon.com/Celestial-Seasonings-Green-Decaf-Count/dp/B000E63LB0\nSnippet: Six 40-count boxes of Decaf Green tea bags \u00b7 Rich in antioxidant vitamin C \u00b7 Decaffeinated and gluten-free. State of Readiness: Ingredient \u00b7 No artificial flavors, ...",
-      "3": "Title: Celestial Seasonings Decaf Authentic Green Tea, 40 ct\nLink: https://www.citymarket.com/p/celestial-seasonings-decaf-authentic-green-tea/0007073400515?srsltid=AfmBOoqpD848edWalMhhyNkfs7X5_lAiIF203cUlDCrsL1fZEAkrKs2S\nSnippet: 2,000 calories a day is used for general nutrition advice. Ingredients Decaffeinated Green Tea, Decaffeinated White Tea and Ascorbic Acid (Vitamin C).",
-      "4": "Title: Celestial Seasonings Decaf Green Tea (6 Boxes)\nLink: https://glutenfreepalace.com/products/decaf-green-tea-6-boxes?srsltid=AfmBOoq5G131EWwoXVMIMAvPOGXZIeKWXqy0IvCQ6gR0zqIgozPSeVmd\nSnippet: THIS PRODUCT IS DECAFFEINATED - Our green, black and white teas are naturally decaffeinated using nontoxic carbon dioxide (CO2). At Celestial Seasonings ...",
-      "5": "Title: Decaf The People's Green Tea Bags\nLink: https://www.republicoftea.com/the-peoples-green-decaf-green-tea/p/v00658/?srsltid=AfmBOorDQ6H20dQCYzKa17GWesLGq5AKvWKAO7IgruT_PKnV0bwugtCl\nSnippet: Decaf Green Tea is decaffeinated using an all-natural process. More about ... Ingredients. Decaffeinated China green tea leaves. Calories. 0. Country of ...",
-      "6": "Title: Decaf Green Tea\nLink: https://celestialseasonings.com/products/decaf-green\nSnippet: Green tea leaves are quickly dried after the harvest to preserve their vibrant color and naturally occurring flavonoid antioxidants. This decaf green tea is complemented by an infusion of decaf white tea for a smoother cup.",
-      "7": "Title: Celestial Seasonings Green Tea, Decaffeinated, 40 Count ...\nLink: https://www.amazon.com/Celestial-Seasonings-Green-Decaf-Count/dp/B000E63LB0\nSnippet: Six 40-count boxes of Decaf Green tea bags \u00b7 Rich in antioxidant vitamin C \u00b7 Decaffeinated and gluten-free. State of Readiness: Ingredient \u00b7 No artificial flavors, ...",
-      "8": "Title: Decaf The People's Green Tea Bags\nLink: https://www.republicoftea.com/the-peoples-green-decaf-green-tea/p/v00658/?srsltid=AfmBOorfsGHrDdJpNoTTxAgS35lhAnWagmjZPZR1zF_UlGkyp09eUhTR\nSnippet: Buy Decaf The People's Green Tea Bags online. This beautifully hued, decaffeinated tea is celebrated for its refreshing, smooth flavor and incredible.",
-      "9": "Title: Decaf Green Tea\nLink: https://www.amazon.com/Decaf-Green-Tea/s?k=Decaf+Green+Tea\nSnippet: Bigelow Tea Classic Green Tea, Decaffeinated Tea, Decaf Green Tea, Count Box (Pack of 6), 120 Total Tea Bags",
-      "10": "Title: What Is Your Favorite Decaf Tea? : r/traderjoes\nLink: https://www.reddit.com/r/traderjoes/comments/194xbgz/what_is_your_favorite_decaf_tea/\nSnippet: Bigelow makes an English Teatime Decaf Black that's great. Also, as others have said, Harney decaf black teas are excellent."
-    },
-    "trusted_search_results": [],
     "llm_trusted_search_results": [
       2,
       3,
       4,
-      7
+      5,
+      6,
+      7,
+      9,
+      10
     ],
     "metadata": {
       "results": [
@@ -1377,64 +1204,64 @@
           "index": 1,
           "is_trusted": false,
           "confidence": 0.0,
-          "explanation": "The product is a generic 'Decaf Green Tea' and does not match the specific brand 'S SEL TEA'."
+          "explanation": "The title does not specify 'Mexican Mocha', only 'Mocha', which does not match the queried flavor."
         },
         {
           "index": 2,
           "is_trusted": true,
-          "confidence": 0.9,
-          "explanation": "This result is from 'Celestial Seasonings' and matches the product type (Decaf Green Tea) and brand identity."
+          "confidence": 1.0,
+          "explanation": "This result matches the exact product title and description, including 'Mexican Mocha' and 'Energy Coffee Beverage'."
         },
         {
           "index": 3,
           "is_trusted": true,
-          "confidence": 0.9,
-          "explanation": "This result is from 'Celestial Seasonings' and matches the product type (Decaf Green Tea) and brand identity."
+          "confidence": 1.0,
+          "explanation": "The title and description match the queried product exactly, including 'Mexican Mocha' and 'Energy Coffee'."
         },
         {
           "index": 4,
           "is_trusted": true,
-          "confidence": 0.9,
-          "explanation": "This result is from 'Celestial Seasonings' and matches the product type (Decaf Green Tea) and brand identity."
+          "confidence": 1.0,
+          "explanation": "This result matches the queried product title and description, including 'Mexican Mocha' and 'Energy Coffee Beverage'."
         },
         {
           "index": 5,
-          "is_trusted": false,
-          "confidence": 0.0,
-          "explanation": "The product is from a different brand ('The People's Tea') and does not match the brand 'S SEL TEA'."
+          "is_trusted": true,
+          "confidence": 1.0,
+          "explanation": "The title and description match the queried product exactly, including 'Mexican Mocha' and 'Energy Coffee Beverage'."
         },
         {
           "index": 6,
-          "is_trusted": false,
-          "confidence": 0.0,
-          "explanation": "The product is a generic 'Decaf Green Tea' and does not match the specific brand 'S SEL TEA'."
+          "is_trusted": true,
+          "confidence": 1.0,
+          "explanation": "This result matches the queried product title and description, including 'Mexican Mocha' and 'Energy Coffee Beverage'."
         },
         {
           "index": 7,
           "is_trusted": true,
-          "confidence": 0.9,
-          "explanation": "This result is from 'Celestial Seasonings' and matches the product type (Decaf Green Tea) and brand identity."
+          "confidence": 1.0,
+          "explanation": "The title and description match the queried product exactly, including 'Mexican Mocha' and 'Energy Coffee Beverage'."
         },
         {
           "index": 8,
           "is_trusted": false,
           "confidence": 0.0,
-          "explanation": "The product is from a different brand ('The People's Tea') and does not match the brand 'S SEL TEA'."
+          "explanation": "The title does not specify 'Mexican Mocha', only 'Mocha', which does not match the queried flavor."
         },
         {
           "index": 9,
-          "is_trusted": false,
-          "confidence": 0.0,
-          "explanation": "The product is a generic 'Decaf Green Tea' and does not match the specific brand 'S SEL TEA'."
+          "is_trusted": true,
+          "confidence": 1.0,
+          "explanation": "This result matches the queried product title and description, including 'Mexican Mocha' and 'Energy Coffee Beverage'."
         },
         {
           "index": 10,
-          "is_trusted": false,
-          "confidence": 0.0,
-          "explanation": "This is a discussion post and not a product listing, thus it cannot be trusted."
+          "is_trusted": true,
+          "confidence": 1.0,
+          "explanation": "The title and description match the queried product exactly, including 'Mexican Mocha' and 'Energy Coffee Beverage'."
         }
       ],
-      "reasoning": "The trusted results are all from 'Celestial Seasonings', which matches the brand identity of the queried product. The other results either represent generic items or different brands, which do not meet the critical matching rules."
+      "reasoning": "The search results were evaluated based on the critical matching rules, focusing on brand consistency, product format, flavor specificity, and description alignment. Results that did not match the 'Mexican Mocha' flavor or had ambiguous titles were rejected, while those that matched all criteria were trusted."
     }
   }
 }

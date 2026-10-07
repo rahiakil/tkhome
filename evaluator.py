@@ -10,8 +10,15 @@ class EvaluationHarness:
     Loads data, runs predictions (LLM or Heuristic), calculates advanced metrics, and formats outputs.
     """
     def __init__(self, data_path: str = DATA_PATH, output_path: str = OUTPUT_PATH):
+        import os
         self.data_path = data_path
-        self.output_path = output_path
+        
+        # If output_path is a directory, append the default filename
+        if os.path.isdir(output_path):
+            self.output_path = os.path.join(output_path, "search_results_predictions.json")
+        else:
+            self.output_path = output_path
+            
         self.raw_data = self.load_data()
 
     def load_data(self) -> Dict[str, Any]:

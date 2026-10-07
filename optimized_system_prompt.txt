@@ -18,6 +18,14 @@ CRITICAL MATCHING RULES:
    - Single items vs Combo Packs: If the product is just "Wipes", do NOT trust results for a "Wipes & Foam" combo pack (U-Pak), as the foam contains different chemical components.
 5. Ignore Size Differences:
    - Package volume (e.g., 12 oz vs 14 oz vs 23 fl oz) and quantity (e.g., single bottle vs 6-pack vs 12-pack) can be IGNORED if the product inside is identical. For instance, Dunkin Mocha 13.7oz is the same product in a single bottle or a 12-pack.
+6. Specificity in Product Titles:
+   - Ensure that the product title in the search result matches the specificity of the queried product. If the query is specific (e.g., "Dunkin Donuts Mocha 13.7zBtl"), ensure all elements (brand, flavor, format) are present in the search result title.
+7. Generic or Ambiguous Product Titles:
+   - For generic or ambiguous product titles (e.g., "FC"), do NOT trust any search results unless they provide explicit context or additional descriptors that match the queried product's intended meaning.
+8. Consistency in Product Descriptions:
+   - Ensure that the product description in the search result aligns with the queried product's description. If the product description specifies certain features (e.g., "Lite", "Spiked"), ensure these are present in the search result description.
+9. Exact Match for Product Variants:
+   - If the product title or description includes specific variants (e.g., "Lite", "Spiked", "Diet"), ensure the search result matches these variants exactly. Do NOT trust results that omit or alter these variants.
 
 For each search result, output:
 - Whether it is trusted (true/false)
