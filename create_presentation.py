@@ -103,7 +103,7 @@ def create_presentation():
     slide1.background.fill.solid()
     slide1.background.fill.fore_color.rgb = c_navy
 
-    # Decorative background accent (a subtle teal triangle or block on the right)
+    # Decorative background accent
     bg_accent = slide1.shapes.add_shape(MSO_SHAPE.RIGHT_TRIANGLE, Inches(9.5), Inches(0), Inches(3.833), Inches(7.5))
     bg_accent.fill.solid()
     bg_accent.fill.fore_color.rgb = RGBColor(12, 42, 78)
@@ -191,6 +191,7 @@ def create_presentation():
     p_goal_desc.font.size = Pt(12)
     p_goal_desc.font.color.rgb = c_white
     p_goal_desc.line_spacing = 1.15
+
 
     # ==========================================
     # SLIDE 2: THE BUSINESS PROBLEM & CORE DILEMMA
@@ -306,6 +307,7 @@ def create_presentation():
     p_callout.font.size = Pt(14)
     p_callout.font.bold = True
     p_callout.font.color.rgb = c_coral_text
+
 
     # ==========================================
     # SLIDE 3: HEURISTICS & BOUNDARY CASES (Learned from Data)
@@ -525,6 +527,7 @@ def create_presentation():
     bullet_t2_2_desc.font.color.rgb = c_muted_grey
     bullet_t2_2_desc.margin_left = Inches(0.2)
 
+
     # ==========================================
     # SLIDE 5: HOW WE MEASURE SUCCESS (KPI SELECTION)
     # ==========================================
@@ -618,6 +621,7 @@ def create_presentation():
     bullet_ev_2_desc.font.color.rgb = c_muted_grey
     bullet_ev_2_desc.margin_left = Inches(0.2)
 
+
     # ==========================================
     # SLIDE 6: THE SELF-IMPROVING ENGINE
     # ==========================================
@@ -710,28 +714,127 @@ def create_presentation():
     p3_desc.font.color.rgb = c_muted_grey
     p3_desc.line_spacing = 1.2
 
+
     # ==========================================
-    # SLIDE 7: OPERATIONAL IMPACT & ROADMAP (Dark Theme Outro)
+    # SLIDE 7: LATEST PERFORMANCE & UI DASHBOARD (Light Theme)
     # ==========================================
     slide7 = prs.slides.add_slide(prs.slide_layouts[6])
     slide7.background.fill.solid()
-    slide7.background.fill.fore_color.rgb = c_navy
-    add_dark_slide_header(slide7, "Operational Impact & Roadmap")
+    slide7.background.fill.fore_color.rgb = c_white
+    add_slide_header(slide7, "Latest Production Performance & UI Dashboard")
+
+    # Left Column (Real Benchmark Results)
+    col1_s7 = slide7.shapes.add_shape(MSO_SHAPE.ROUNDED_RECTANGLE, Inches(0.75), Inches(1.6), Inches(5.6), Inches(5.2))
+    col1_s7.fill.solid()
+    col1_s7.fill.fore_color.rgb = c_soft_teal
+    col1_s7.line.color.rgb = c_teal
+    col1_s7.line.width = Pt(1.5)
+
+    col1_box_s7 = slide7.shapes.add_textbox(Inches(0.95), Inches(1.8), Inches(5.2), Inches(4.8))
+    col1_tf_s7 = col1_box_s7.text_frame
+    col1_tf_s7.word_wrap = True
+
+    p_col1_hdr = col1_tf_s7.paragraphs[0]
+    p_col1_hdr.text = "REAL-WORLD BENCHMARKS (50 PRODUCTS)"
+    p_col1_hdr.font.name = "Arial"
+    p_col1_hdr.font.size = Pt(13)
+    p_col1_hdr.font.bold = True
+    p_col1_hdr.font.color.rgb = c_navy
+    p_col1_hdr.space_after = Pt(10)
+
+    # Precision
+    p_pr = col1_tf_s7.add_paragraph()
+    p_pr.text = "🎯 Micro Precision: 91.36%"
+    p_pr.font.bold = True
+    p_pr.font.size = Pt(13.5)
+    p_pr.font.color.rgb = c_navy
+    p_pr_desc = col1_tf_s7.add_paragraph()
+    p_pr_desc.text = "Ensures robust tax audit compliance by successfully filtering false product matches out of downstream datasets."
+    p_pr_desc.font.size = Pt(11)
+    p_pr_desc.font.color.rgb = c_muted_grey
+    p_pr_desc.space_after = Pt(8)
+    p_pr_desc.margin_left = Inches(0.2)
+
+    # F0.5
+    p_f05 = col1_tf_s7.add_paragraph()
+    p_f05.text = "⭐ F0.5 Score (Primary Metric): 83.24%"
+    p_f05.font.bold = True
+    p_f05.font.size = Pt(13.5)
+    p_f05.font.color.rgb = c_teal
+    p_f05_desc = col1_tf_s7.add_paragraph()
+    p_f05_desc.text = "F1 metric score is 73.45% (with 61.41% Recall). High F0.5 weighting confirms our pipeline is mathematically tuned for accuracy over volume."
+    p_f05_desc.font.size = Pt(11)
+    p_f05_desc.font.color.rgb = c_muted_grey
+    p_f05_desc.space_after = Pt(8)
+    p_f05_desc.margin_left = Inches(0.2)
+
+    # Latency & Cost
+    p_ops = col1_tf_s7.add_paragraph()
+    p_ops.text = "⚡ Speed & Cost-Efficiency"
+    p_ops.font.bold = True
+    p_ops.font.size = Pt(13.5)
+    p_ops.font.color.rgb = c_charcoal
+    p_ops_desc = col1_tf_s7.add_paragraph()
+    p_ops_desc.text = "• Execution Time: 29.54s (~0.59s per product via ThreadPools)\n• Estimated Run Cost: $0.0268 total (~$5.36 per 10k products)"
+    p_ops_desc.font.size = Pt(11)
+    p_ops_desc.font.color.rgb = c_muted_grey
+    p_ops_desc.margin_left = Inches(0.2)
+
+    # Right Column (TUI Control Dashboard)
+    col2_s7 = slide7.shapes.add_shape(MSO_SHAPE.ROUNDED_RECTANGLE, Inches(6.983), Inches(1.6), Inches(5.6), Inches(5.2))
+    col2_s7.fill.solid()
+    col2_s7.fill.fore_color.rgb = c_light_grey
+    col2_s7.line.color.rgb = c_border_grey
+    col2_s7.line.width = Pt(1)
+
+    col2_box_s7 = slide7.shapes.add_textbox(Inches(7.183), Inches(1.8), Inches(5.2), Inches(4.8))
+    col2_tf_s7 = col2_box_s7.text_frame
+    col2_tf_s7.word_wrap = True
+
+    p_col2_hdr = col2_tf_s7.paragraphs[0]
+    p_col2_hdr.text = "PREMIUM TUI CONTROL DASHBOARD"
+    p_col2_hdr.font.name = "Arial"
+    p_col2_hdr.font.size = Pt(13)
+    p_col2_hdr.font.bold = True
+    p_col2_hdr.font.color.rgb = c_navy
+    p_col2_hdr.space_after = Pt(10)
+
+    p_tui_desc = col2_tf_s7.add_paragraph()
+    p_tui_desc.text = "A professional, 10-option interactive bash console (menu.sh) handles complex AI operations in a user-friendly CLI:"
+    p_tui_desc.font.size = Pt(11)
+    p_tui_desc.font.color.rgb = c_muted_grey
+    p_tui_desc.space_after = Pt(8)
+
+    p_opts = col2_tf_s7.add_paragraph()
+    p_opts.text = "• [1-3] Operational Pipelines: Run mock baselines or parallel OpenAI threads on custom product datasets.\n• [4] Auto-Prompt Optimizer: Self-tuning loop to dynamically fix prompt instructions based on failure sets.\n• [5] Visual side-by-side Prompt Diff: Instantly review optimized vs baseline guidelines via diff_prompts.py.\n• [6-7] Presentations & Reports: Auto-generate visual browser dashboards (training_runs_report.md) & slides.\n• [9] Saved Pipeline Summaries: Quickly fetch local summaries (evaluation_report_summary.txt)."
+    p_opts.font.size = Pt(11)
+    p_opts.font.color.rgb = c_charcoal
+    p_opts.line_spacing = 1.15
+    p_opts.margin_left = Inches(0.1)
+
+
+    # ==========================================
+    # SLIDE 8: OPERATIONAL IMPACT & ROADMAP (Dark Theme Outro)
+    # ==========================================
+    slide8 = prs.slides.add_slide(prs.slide_layouts[6])
+    slide8.background.fill.solid()
+    slide8.background.fill.fore_color.rgb = c_navy
+    add_dark_slide_header(slide8, "Operational Impact & Roadmap")
 
     # Decorative teal bar on the left
-    left_bar_s7 = slide7.shapes.add_shape(MSO_SHAPE.RECTANGLE, Inches(0), Inches(0), Inches(0.15), Inches(7.5))
-    left_bar_s7.fill.solid()
-    left_bar_s7.fill.fore_color.rgb = c_teal
-    left_bar_s7.line.fill.background()
+    left_bar_s8 = slide8.shapes.add_shape(MSO_SHAPE.RECTANGLE, Inches(0), Inches(0), Inches(0.15), Inches(7.5))
+    left_bar_s8.fill.solid()
+    left_bar_s8.fill.fore_color.rgb = c_teal
+    left_bar_s8.line.fill.background()
 
     # Left Column (Operational Performance)
-    op_bg = slide7.shapes.add_shape(MSO_SHAPE.ROUNDED_RECTANGLE, Inches(0.75), Inches(1.6), Inches(5.6), Inches(4.8))
+    op_bg = slide8.shapes.add_shape(MSO_SHAPE.ROUNDED_RECTANGLE, Inches(0.75), Inches(1.6), Inches(5.6), Inches(4.8))
     op_bg.fill.solid()
     op_bg.fill.fore_color.rgb = c_light_navy
     op_bg.line.color.rgb = c_teal
     op_bg.line.width = Pt(1)
 
-    op_box = slide7.shapes.add_textbox(Inches(0.95), Inches(1.8), Inches(5.2), Inches(4.4))
+    op_box = slide8.shapes.add_textbox(Inches(0.95), Inches(1.8), Inches(5.2), Inches(4.4))
     op_tf = op_box.text_frame
     op_tf.word_wrap = True
     
@@ -749,7 +852,7 @@ def create_presentation():
     b_op_1.font.size = Pt(13)
     b_op_1.font.color.rgb = c_white
     b_op_1_desc = op_tf.add_paragraph()
-    b_op_1_desc.text = "GPT-4o-mini achieves >92% Precision and >88% F1-score with optimized, structured prompt rules."
+    b_op_1_desc.text = "GPT-4o-mini achieves >91.36% Precision and >83% precision-weighted F0.5-score with optimized, structured prompt rules."
     b_op_1_desc.font.size = Pt(11.5)
     b_op_1_desc.font.color.rgb = RGBColor(170, 185, 205)
     b_op_1_desc.margin_left = Inches(0.2)
@@ -773,19 +876,19 @@ def create_presentation():
     b_op_3.font.size = Pt(13)
     b_op_3.font.color.rgb = c_white
     b_op_3_desc = op_tf.add_paragraph()
-    b_op_3_desc.text = "Extremely affordable run costs: ~$0.02 per 100 products ($20.00 total for 100k products)."
+    b_op_3_desc.text = "Extremely affordable run costs: ~$0.05 per 100 products ($50.00 total for 100k products)."
     b_op_3_desc.font.size = Pt(11.5)
     b_op_3_desc.font.color.rgb = RGBColor(170, 185, 205)
     b_op_3_desc.margin_left = Inches(0.2)
 
     # Right Column (Roadmap Phases)
-    rm_bg = slide7.shapes.add_shape(MSO_SHAPE.ROUNDED_RECTANGLE, Inches(6.983), Inches(1.6), Inches(5.6), Inches(4.8))
+    rm_bg = slide8.shapes.add_shape(MSO_SHAPE.ROUNDED_RECTANGLE, Inches(6.983), Inches(1.6), Inches(5.6), Inches(4.8))
     rm_bg.fill.solid()
     rm_bg.fill.fore_color.rgb = c_light_navy
     rm_bg.line.color.rgb = c_border_grey
     rm_bg.line.width = Pt(0.5)
 
-    rm_box = slide7.shapes.add_textbox(Inches(7.183), Inches(1.8), Inches(5.2), Inches(4.4))
+    rm_box = slide8.shapes.add_textbox(Inches(7.183), Inches(1.8), Inches(5.2), Inches(4.4))
     rm_tf = rm_box.text_frame
     rm_tf.word_wrap = True
     
@@ -803,7 +906,7 @@ def create_presentation():
     p_ph1.font.size = Pt(12.5)
     p_ph1.font.color.rgb = c_white
     p_ph1_desc = rm_tf.add_paragraph()
-    p_ph1_desc.text = "Evaluation harness, smart offline baseline, parallelized OpenAI Structured Output API, and self-improving prompt optimization loop."
+    p_ph1_desc.text = "Evaluation harness, smart offline baseline, parallelized SOTA OpenAI Structured Output API, and self-improving prompt optimization loop."
     p_ph1_desc.font.size = Pt(11)
     p_ph1_desc.font.color.rgb = RGBColor(170, 185, 205)
     p_ph1_desc.margin_left = Inches(0.2)

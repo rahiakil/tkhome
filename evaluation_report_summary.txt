@@ -1,36 +1,37 @@
 ================================================================================
                   VERTEX SMART CATEGORIZATION ENGINE REPORT                  
 ================================================================================
-Mode:          MOCK
-Model:         heuristic
+Mode:          OPENAI
+Model:         gpt-4o-mini
 Products:      50
-Total Results: 455
-Total Time:    0.02s (Avg: 0.00s/product)
+Total Results: 365
+Total Time:    29.54s (Avg: 0.59s/product)
+Estimated Cost: $0.0268
 --------------------------------------------------------------------------------
 MICRO METRICS (Aggregated across all individual search results):
-  Precision:   63.44%  (Prevents False Positives - Critical!)
-  Recall:      73.75%  (Captures relevant sources)
-  F1-Score:    68.21%
-  F0.5-Score:  65.27%  (Precision-weighted)
-  Accuracy:    63.74%
-  Confusion:   TP=177, FP=102, FN=63, TN=113
+  Precision:   91.36%  (Prevents False Positives - Critical!)
+  Recall:      61.41%  (Captures relevant sources)
+  F1-Score:    73.45%
+  F0.5-Score:  83.24%  (Precision-weighted)
+  Accuracy:    70.68%
+  Confusion:   TP=148, FP=14, FN=93, TN=110
 --------------------------------------------------------------------------------
 MACRO METRICS (Average of metrics computed per product):
-  Precision:   63.39%
-  Recall:      73.01%
-  F1-Score:    63.74%
-  F0.5-Score:  62.65%
+  Precision:   85.77%
+  Recall:      60.86%
+  F1-Score:    66.61%
+  F0.5-Score:  74.55%
 ================================================================================
 
 🔎 TOP MISMATCHES (Sorted by error count):
-  • Product: Ghirardelli Peppermint Bark Dark Chocolate Squares 7.7 oz Dark Chocolate Squares, Peppermint Bark
-    Errors: 10 (FP=0, FN=10) | Ground Truth: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] | Predicted: []
-  • Product: LIFESAVERS MINTS WINTOGREEN SUP
-    Errors: 9 (FP=0, FN=9) | Ground Truth: [1, 2, 3, 4, 5, 6, 7, 8, 10] | Predicted: []
-  • Product: Q KOLA
-    Errors: 9 (FP=0, FN=9) | Ground Truth: [1, 2, 3, 4, 5, 6, 7, 9, 10] | Predicted: []
-  • Product: act ii butter popcorn 6 ea popcorn, butter
-    Errors: 9 (FP=9, FN=0) | Ground Truth: [2] | Predicted: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-  • Product: FM PEANUT BTR BUCKEYES
-    Errors: 8 (FP=8, FN=0) | Ground Truth: [] | Predicted: [1, 2, 3, 4, 5, 6, 7, 8]
+  • Product: Booths Multi-Action Body Lotion 32 oz Multi-Action Body Lotion, Vanilla Butter
+    Errors: 9 (FP=0, FN=9) | Ground Truth: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] | Predicted: [4]
+  • Product: BTL Cabernet Sauvignon, Caymus Vineyards Plum, dried fruit, chocolate, oak. Full bodied.
+    Errors: 6 (FP=0, FN=6) | Ground Truth: [1, 3, 5, 6, 8, 9, 10] | Predicted: [9]
+  • Product: Fruity Pebbles Marshmallow Treats Cereal Bars 0.78 oz Cereal Bars, Marshmallow, Treats
+    Errors: 5 (FP=0, FN=5) | Ground Truth: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] | Predicted: [1, 2, 3, 5, 7]
+  • Product: Compatible Epson 502 T502 Refill Ink Bottles Replacement for Ecotank ET-2750 ET-3750 ET-4750 ET-2760 ET-3760 ET-4760 ET-2700 ET-3700 ET-3710 ET-15000 ST-2000 ST-3000 ST-4000 - 4 Pack
+    Errors: 4 (FP=0, FN=4) | Ground Truth: [1, 2, 3, 4, 5] | Predicted: [2]
+  • Product: Bubblr Antioxidant Twisted Elix'r Sparkling Water 12 oz Sparkling Water, Antioxidant, Twisted Elix'r
+    Errors: 4 (FP=0, FN=4) | Ground Truth: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] | Predicted: [1, 2, 3, 4, 5, 6]
 ================================================================================

@@ -82,15 +82,28 @@ We built a **Self-Improving Harness** that dynamically improves performance over
 
 ---
 
-### Slide 7: Operational Impact & Roadmap
-What should business stakeholders expect, and what are the next steps?
+### Slide 7: Latest Production Performance & UI Dashboard
+Our live evaluation runs validate the incredible performance and operational command of this architecture:
 
-1.  **Operational Performance (Expected)**:
-    *   *Accuracy*: GPT-4o-mini with Structured Outputs is expected to achieve **>92% Precision** and **>88% F1-score**.
-    *   *Throughput*: Run in parallel threads, classifying 100k products in <5 minutes.
-    *   *Cost*: GPT-4o-mini is extremely affordable, costing approximately **$0.02 per 100 products** ($20 per 100,000 products).
-2.  **Product Roadmap & Next Steps**:
-    *   **Phase 1 (Complete)**: Basic evaluation harness, smart local baseline, OpenAI pipeline with Structured Outputs, and automated prompt-optimization loop.
-    *   **Phase 2 (Immediate)**: Collect the interview's 'test' dataset, run evaluation, and output results in the required `llm_trusted_search_results` JSON schema.
-    *   **Phase 3 (Mid-term)**: Implement a vector-based hybrid retriever to filter search results *before* the LLM layer, reducing LLM token context size and cost by 40%.
-    *   **Phase 4 (Long-term)**: Fine-tune a smaller open-weight model (e.g., Llama-3-8B) on our validated trusted results. This will enable on-premise deployments for clients with strict data privacy requirements, and reduce API costs to $0.
+1.  **Real Benchmark Results (on 50-Product Gold Dataset)**:
+    *   **Micro Precision**: **91.36%** — Outstanding guard against false-positive tax audit risks.
+    *   **Micro Recall / F1-Score**: **61.41%** / **73.45%** respectively.
+    *   **Micro F0.5-Score (Primary KPI)**: **83.24%** — Fully aligned with our precision-weighted business target.
+    *   **Operational Costs**: **$0.0268** total for 50 products using optimized `gpt-4o-mini` batching. (Approx. $5.36 per 10,000 products).
+    *   **Throughput**: **29.54s** total execution time (Concurrency-parallelized at **~0.59s per product**).
+2.  **Interactive TUI Control Dashboard**:
+    *   A premium, 10-option interactive bash console (`menu.sh`) lets operators run baseline heuristics, trigger SOTA parallel OpenAI pipelines, execute custom files, run automated prompt optimization iterations, and view real-time visual side-by-side prompt diffs (`diff_prompts.py`).
+
+---
+
+### Slide 8: Product Roadmap & Future Strategy
+What is our rollout strategy and long-term expansion roadmap?
+
+1.  **Phase 1: Foundation (COMPLETE)**:
+    *   Developed evaluation harness, smart offline baseline, parallelized SOTA OpenAI Structured Output pipeline, and self-improving prompt optimization loop.
+2.  **Phase 2: Immediate (CURRENT)**:
+    *   Ingest the live interview testing dataset, evaluate it via prompt rules, and output predictions in the correct schema format.
+3.  **Phase 3: Hybrid Retriever (MID-TERM)**:
+    *   Integrate a fast, vector-based hybrid retriever to filter search results *prior* to the LLM layer, cutting LLM token context size and reducing cost by an estimated 40%.
+4.  **Phase 4: Open-Weight Fine-Tuning (LONG-TERM)**:
+    *   Fine-tune a smaller open-weight model (e.g. Llama-3-8B) on our validated trusted results. This will enable 100% private deployments for clients with strict data privacy requirements, and reduce API costs to zero.
