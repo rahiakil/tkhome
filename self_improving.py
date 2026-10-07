@@ -173,5 +173,21 @@ INSTRUCTIONS FOR REFINEMENT:
         with open("optimized_system_prompt.txt", "w") as f:
             f.write(best_prompt)
         print("💾 Saved best system prompt to 'optimized_system_prompt.txt'")
+
+        # Dump optimization summary text file
+        opt_report = []
+        opt_report.append("="*80)
+        opt_report.append("                VERTEX SMART CATEGORIZATION PROMPT OPTIMIZATION LOG            ")
+        opt_report.append("="*80)
+        opt_report.append(f"Model Used:      {self.model}")
+        opt_report.append(f"Subset Limit:    {sample_limit} products")
+        opt_report.append(f"Total Iterations:{iterations}")
+        opt_report.append(f"Best F0.5 Score: {best_score * 100:.2f}%")
+        opt_report.append(f"Status:          Successfully Auto-Tuned System Prompt")
+        opt_report.append("="*80)
+        
+        with open("prompt_optimization_summary.txt", "w") as f:
+            f.write("\n".join(opt_report))
+        print("💾 Saved optimization process summary to 'prompt_optimization_summary.txt'")
         
         return best_prompt

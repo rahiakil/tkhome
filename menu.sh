@@ -56,10 +56,11 @@ while true; do
     echo -e "  ${CYAN}${BOLD}[6]${NC} Regenerate Visual Browser Report    ${YELLOW}(Rebuilds training_runs_report.md)${NC}"
     echo -e "  ${CYAN}${BOLD}[7]${NC} Display Project Slide Presentation   ${YELLOW}(Preview presentation outline)${NC}"
     echo -e "  ${CYAN}${BOLD}[8]${NC} View Codebase Status & Git Log      ${YELLOW}(Quick git status & commit verification)${NC}"
-    echo -e "  ${CYAN}${BOLD}[9]${NC} Exit TUI"
+    echo -e "  ${CYAN}${BOLD}[9]${NC} View Latest Run Summary Files       ${YELLOW}(Read evaluation/optimization text reports)${NC}"
+    echo -e "  ${CYAN}${BOLD}[10]${NC} Exit TUI"
     echo ""
     echo -e "${BLUE}${BOLD}================================================================================${NC}"
-    echo -en "${CYAN}${BOLD}Enter choice [1-9]: ${NC}"
+    echo -en "${CYAN}${BOLD}Enter choice [1-10]: ${NC}"
     read -r choice
 
     case $choice in
@@ -151,11 +152,32 @@ while true; do
             press_any_key
             ;;
         9)
+            show_header
+            echo -e "${GREEN}${BOLD}📋 Latest Pipeline Run Summaries (Saved Logs):${NC}\n"
+            
+            if [ -f evaluation_report_summary.txt ]; then
+                echo -e "${CYAN}${BOLD}=== evaluation_report_summary.txt ===${NC}"
+                cat evaluation_report_summary.txt
+                echo ""
+            else
+                echo -e "${YELLOW}💡 No evaluation run summary file found yet. Run Options [1], [2], or [3] first.${NC}\n"
+            fi
+            
+            if [ -f prompt_optimization_summary.txt ]; then
+                echo -e "${CYAN}${BOLD}=== prompt_optimization_summary.txt ===${NC}"
+                cat prompt_optimization_summary.txt
+                echo ""
+            else
+                echo -e "${YELLOW}💡 No prompt optimization summary file found yet. Run Option [4] first.${NC}\n"
+            fi
+            press_any_key
+            ;;
+        10)
             echo -e "\n${GREEN}${BOLD}👋 Exiting Smart Categorization Dashboard TUI.${NC}\n"
             exit 0
             ;;
         *)
-            echo -e "\n${RED}${BOLD}❌ Invalid entry! Please enter a number between 1 and 8.${NC}"
+            echo -e "\n${RED}${BOLD}❌ Invalid entry! Please enter a number between 1 and 10.${NC}"
             sleep 2
             ;;
     esac

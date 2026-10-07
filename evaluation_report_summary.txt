@@ -1,0 +1,36 @@
+================================================================================
+                  VERTEX SMART CATEGORIZATION ENGINE REPORT                  
+================================================================================
+Mode:          MOCK
+Model:         heuristic
+Products:      50
+Total Results: 455
+Total Time:    0.02s (Avg: 0.00s/product)
+--------------------------------------------------------------------------------
+MICRO METRICS (Aggregated across all individual search results):
+  Precision:   63.44%  (Prevents False Positives - Critical!)
+  Recall:      73.75%  (Captures relevant sources)
+  F1-Score:    68.21%
+  F0.5-Score:  65.27%  (Precision-weighted)
+  Accuracy:    63.74%
+  Confusion:   TP=177, FP=102, FN=63, TN=113
+--------------------------------------------------------------------------------
+MACRO METRICS (Average of metrics computed per product):
+  Precision:   63.39%
+  Recall:      73.01%
+  F1-Score:    63.74%
+  F0.5-Score:  62.65%
+================================================================================
+
+🔎 TOP MISMATCHES (Sorted by error count):
+  • Product: Ghirardelli Peppermint Bark Dark Chocolate Squares 7.7 oz Dark Chocolate Squares, Peppermint Bark
+    Errors: 10 (FP=0, FN=10) | Ground Truth: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] | Predicted: []
+  • Product: LIFESAVERS MINTS WINTOGREEN SUP
+    Errors: 9 (FP=0, FN=9) | Ground Truth: [1, 2, 3, 4, 5, 6, 7, 8, 10] | Predicted: []
+  • Product: Q KOLA
+    Errors: 9 (FP=0, FN=9) | Ground Truth: [1, 2, 3, 4, 5, 6, 7, 9, 10] | Predicted: []
+  • Product: act ii butter popcorn 6 ea popcorn, butter
+    Errors: 9 (FP=9, FN=0) | Ground Truth: [2] | Predicted: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+  • Product: FM PEANUT BTR BUCKEYES
+    Errors: 8 (FP=8, FN=0) | Ground Truth: [] | Predicted: [1, 2, 3, 4, 5, 6, 7, 8]
+================================================================================

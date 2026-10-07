@@ -219,42 +219,44 @@ class EvaluationHarness:
 
     def print_report(self, results: Dict[str, Any]):
         """
-        Print a beautiful, well-formatted summary of the run in the terminal.
+        Print a beautiful, well-formatted summary of the run in the terminal,
+        and dump it as a persistent text file 'evaluation_report_summary.txt'.
         """
         summary = results["summary"]
         prod_details = results["product_details"]
 
-        print("\n" + "="*80)
-        print("                  VERTEX SMART CATEGORIZATION ENGINE REPORT                  ")
-        print("="*80)
-        print(f"Mode:          {summary['mode'].upper()}")
-        print(f"Model:         {summary['model']}")
-        print(f"Products:      {summary['total_products']}")
-        print(f"Total Results: {summary['total_search_results_evaluated']}")
-        print(f"Total Time:    {summary['total_latency_seconds']:.2f}s (Avg: {summary['avg_latency_per_product_seconds']:.2f}s/product)")
+        report_lines = []
+        report_lines.append("="*80)
+        report_lines.append("                  VERTEX SMART CATEGORIZATION ENGINE REPORT                  ")
+        report_lines.append("="*80)
+        report_lines.append(f"Mode:          {summary['mode'].upper()}")
+        report_lines.append(f"Model:         {summary['model']}")
+        report_lines.append(f"Products:      {summary['total_products']}")
+        report_lines.append(f"Total Results: {summary['total_search_results_evaluated']}")
+        report_lines.append(f"Total Time:    {summary['total_latency_seconds']:.2f}s (Avg: {summary['avg_latency_per_product_seconds']:.2f}s/product)")
         if summary['mode'] == 'openai':
-            print(f"Estimated Cost: ${summary['estimated_cost_usd']:.4f}")
-        print("-"*80)
-        print("MICRO METRICS (Aggregated across all individual search results):")
-        print(f"  Precision:   {summary['micro_metrics']['precision'] * 100:.2f}%  (Prevents False Positives - Critical!)")
-        print(f"  Recall:      {summary['micro_metrics']['recall'] * 100:.2f}%  (Captures relevant sources)")
-        print(f"  F1-Score:    {summary['micro_metrics']['f1'] * 100:.2f}%")
-        print(f"  F0.5-Score:  {summary['micro_metrics']['f_beta_0.5'] * 100:.2f}%  (Precision-weighted)")
-        print(f"  Accuracy:    {summary['micro_metrics']['accuracy'] * 100:.2f}%")
-        print(f"  Confusion:   TP={summary['micro_metrics']['confusion_matrix']['tp']}, "
-              f"FP={summary['micro_metrics']['confusion_matrix']['fp']}, "
-              f"FN={summary['micro_metrics']['confusion_matrix']['fn']}, "
-              f"TN={summary['micro_metrics']['confusion_matrix']['tn']}")
-        print("-"*80)
-        print("MACRO METRICS (Average of metrics computed per product):")
-        print(f"  Precision:   {summary['macro_metrics']['precision'] * 100:.2f}%")
-        print(f"  Recall:      {summary['macro_metrics']['recall'] * 100:.2f}%")
-        print(f"  F1-Score:    {summary['macro_metrics']['f1'] * 100:.2f}%")
-        print(f"  F0.5-Score:  {summary['macro_metrics']['f_beta_0.5'] * 100:.2f}%")
-        print("="*80)
+            report_lines.append(f"Estimated Cost: ${summary['estimated_cost_usd']:.4f}")
+        report_lines.append("-"*80)
+        report_lines.append("MICRO METRICS (Aggregated across all individual search results):")
+        report_lines.append(f"  Precision:   {summary['micro_metrics']['precision'] * 100:.2f}%  (Prevents False Positives - Critical!)")
+        report_lines.append(f"  Recall:      {summary['micro_metrics']['recall'] * 100:.2f}%  (Captures relevant sources)")
+        report_lines.append(f"  F1-Score:    {summary['micro_metrics']['f1'] * 100:.2f}%")
+        report_lines.append(f"  F0.5-Score:  {summary['micro_metrics']['f_beta_0.5'] * 100:.2f}%  (Precision-weighted)")
+        report_lines.append(f"  Accuracy:    {summary['micro_metrics']['accuracy'] * 100:.2f}%")
+        report_lines.append(f"  Confusion:   TP={summary['micro_metrics']['confusion_matrix']['tp']}, "
+                            f"FP={summary['micro_metrics']['confusion_matrix']['fp']}, "
+                            f"FN={summary['micro_metrics']['confusion_matrix']['fn']}, "
+                            f"TN={summary['micro_metrics']['confusion_matrix']['tn']}")
+        report_lines.append("-"*80)
+        report_lines.append("MACRO METRICS (Average of metrics computed per product):")
+        report_lines.append(f"  Precision:   {summary['macro_metrics']['precision'] * 100:.2f}%")
+        report_lines.append(f"  Recall:      {summary['macro_metrics']['recall'] * 100:.2f}%")
+        report_lines.append(f"  F1-Score:    {summary['macro_metrics']['f1'] * 100:.2f}%")
+        report_lines.append(f"  F0.5-Score:  {summary['macro_metrics']['f_beta_0.5'] * 100:.2f}%")
+        report_lines.append("="*80)
 
         # Show top failures/successes
-        print("\n🔎 TOP MISMATCHES (Sorted by error count):")
+        report_lines.append("\n🔎 TOP MISMATCHES (Sorted by error count):")
         failures = []
         for prod_id, details in prod_details.items():
             m = details["metrics"]
@@ -264,9 +266,18 @@ class EvaluationHarness:
 
         failures.sort(key=lambda x: x[1], reverse=True)
         for prod_id, errs, fp, fn, gt, pred in failures[:5]:
-            print(f"  • Product: {prod_id.strip()}")
-            print(f"    Errors: {errs} (FP={fp}, FN={fn}) | Ground Truth: {gt} | Predicted: {pred}")
+            report_lines.append(f"  • Product: {prod_id.strip()}")
+            report_lines.append(f"    Errors: {errs} (FP={fp}, FN={fn}) | Ground Truth: {gt} | Predicted: {pred}")
         
         if not failures:
-            print("  🎉 PERFECT RUN! No mismatches found.")
-        print("="*80 + "\n")
+            report_lines.append("  🎉 PERFECT RUN! No mismatches found.")
+        report_lines.append("="*80 + "\n")
+
+        # Print to terminal
+        for line in report_lines:
+            print(line)
+
+        # Save to persistent file
+        with open("evaluation_report_summary.txt", "w") as f:
+            f.write("\n".join(report_lines))
+        print("💾 Saved persistent summary report to 'evaluation_report_summary.txt'")
