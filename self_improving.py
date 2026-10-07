@@ -47,7 +47,8 @@ class PromptOptimizer:
         best_prompt = current_prompt
 
         # First, establish the baseline score with the default prompt
-        print(f"🔄 Establishing baseline score on validation split (first {sample_limit} products)...")
+        print(f"🔄 [STEP 1/4: Establish Baseline Performance]")
+        print(f"   Running evaluation harness on validation split (first {sample_limit} products)...")
         baseline_results = self.harness.run_eval(
             mode="openai", 
             model=self.model, 
@@ -58,12 +59,15 @@ class PromptOptimizer:
         summary = baseline_results["summary"]
         # We optimize for F0.5-score as Precision is critical for avoiding false data ingestion
         best_score = summary["micro_metrics"]["f_beta_0.5"]
-        print(f"📊 Baseline F0.5-Score: {best_score * 100:.2f}% (F1-Score: {summary['micro_metrics']['f1'] * 100:.2f}%)")
+        print(f"\n📊 Baseline F0.5-Score: {best_score * 100:.2f}% (F1-Score: {summary['micro_metrics']['f1'] * 100:.2f}%)")
 
         for iteration in range(iterations):
             print(f"\n🔄 --- STARTING OPTIMIZATION ITERATION {iteration + 1}/{iterations} ---")
             
             # 1. Collect failure cases
+            print(f"🔄 [STEP 2/4: Diagnostic Log Harvesting]")
+            print(f"   Analyzing baseline predictions against human ground truth labels...")
+            print(f"   Identifying misclassified False Positives (FP) and False Negatives (FN)...")
             failures = []
             for prod_id, details in baseline_results["product_details"].items():
                 m = details["metrics"]
@@ -87,6 +91,9 @@ class PromptOptimizer:
             failures_subset = failures[:4]
             
             # 2. Call OpenAI to optimize the system prompt
+            print(f"\n🔄 [STEP 3/4: Meta-Prompt Optimization Layer]")
+            print(f"   Feeding failure scenarios and misclassified JSON data into GPT-4o...")
+            print(f"   Generating self-correcting rules to target observed sweetener, format, or brand errors...")
             optimization_prompt = f"""You are a Meta-Prompt Optimizer.
 Your goal is to refine the system prompt used by an LLM-based search result classifier to improve its performance.
 We are optimizing for **F0.5-score**, which prioritizes Precision (avoiding false positives) while maintaining high Recall.
@@ -130,7 +137,9 @@ INSTRUCTIONS FOR REFINEMENT:
                 refined_prompt = refined_prompt.strip()
                 
                 # 3. Evaluate the new prompt
-                print("🧪 Evaluating refined prompt on the same validation split...")
+                print(f"\n🔄 [STEP 4/4: Validation Split Gated Verification]")
+                print(f"   Executing full SOTA pipeline with the proposed system prompt...")
+                print(f"   Evaluating on validation subset and comparing new F0.5 scores to baseline...")
                 new_results = self.harness.run_eval(
                     mode="openai", 
                     model=self.model, 

@@ -13,7 +13,7 @@ NC='\033[0m' # No Color
 # Set up clean trap to exit gracefully on Ctrl+C
 trap ctrl_c INT
 function ctrl_c() {
-    echo -e "\n\n${YELLOW}👋 Gracefully exiting TUI. Good luck with the presentation!${NC}\n"
+    echo -e "\n\n${YELLOW}👋 Gracefully exiting Smart Categorization Dashboard TUI.${NC}\n"
     exit 0
 }
 
@@ -151,7 +151,7 @@ while true; do
             press_any_key
             ;;
         9)
-            echo -e "\n${GREEN}${BOLD}👋 Goodbye and good luck with the presentation!${NC}\n"
+            echo -e "\n${GREEN}${BOLD}👋 Exiting Smart Categorization Dashboard TUI.${NC}\n"
             exit 0
             ;;
         *)
