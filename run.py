@@ -55,6 +55,20 @@ def main():
     print("     python3 run.py --optimize")
     print("="*80 + "\n")
 
+    # --- PRE-FLIGHT VALIDATION CHECKS ---
+    # 1. Verify Input File exists
+    if not os.path.exists(args.input):
+        print(f"❌ ERROR: Input file '{args.input}' does not exist.")
+        print("Please verify the file path and run the script again.")
+        sys.exit(1)
+
+    # 2. Verify Output Directory exists (or parent folder of file)
+    output_dir = args.output if os.path.isdir(args.output) else os.path.dirname(os.path.abspath(args.output))
+    if output_dir and not os.path.exists(output_dir):
+        print(f"❌ ERROR: Output directory '{output_dir}' does not exist.")
+        print("Please create this directory first or specify a valid path where the predictions can be saved.")
+        sys.exit(1)
+
     if args.optimize:
         optimizer = PromptOptimizer(model=args.model, data_path=args.input, output_path=args.output)
         optimizer.optimize(iterations=args.iterations, sample_limit=args.opt_limit)
